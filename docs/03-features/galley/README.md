@@ -1,0 +1,95 @@
+# Feature: Galley
+
+> Status: `researching`  
+> Priority: `P0`  
+> Jira Epic: _TBD (build phase)_  
+> Last updated: 2026-10-13
+
+## Summary
+
+Cooking and food prep for two, located **aft near the shower** so the sink can gravity-drain to under-mount tanks behind the rear axle ([ADR-0005](../../05-decisions/0005-traction-battery-floor-no-drill-zone.md)). Installed appliances are **electric only** ([ADR-0003](../../05-decisions/0003-all-electric-house-systems.md)). Outdoor campfire / grill cooking is allowed as a lifestyle exception.
+
+## Goals
+
+- Convenient enough that we cook for real (vision: omit if awkward)
+- Support weekenders through multi-month trips
+- Align with eco, light weight, modern calm look
+
+## Non-goals
+
+- No propane / camping-gas cooktop or oven onboard
+- Overseas voltage norms do not drive v1
+
+## Requirements
+
+### Must
+
+- No combustion fuels as installed galley energy
+- Work within e-Sprinter electrical / weight budgets ([ADR-0002](../../05-decisions/0002-mercedes-e-sprinter-platform.md))
+- **Aft placement** with wet core; sink drains toward aft tanks
+- Cabinetry over battery floor span uses **OEM tie-downs only** if floor-mounted
+- **2-burner induction** cooktop (120V AC)
+- Combo **electric oven / air-fryer / toaster** (e.g. Ninja Flip class, 120V AC)
+- **Small microwave** (120V AC)
+- **Fridge / freezer** — **48V DC** ([ADR-0004](../../05-decisions/0004-48v-house-dc-bus.md))
+- **Coffee maker** with dedicated thin **PEX-A** water feed from the treated fresh system (no manual reservoir filling) — [water](../../02-architecture/water.md)
+- Induction can move to **exterior AC outlet** for outdoor cooking
+- **Electric grill** for outdoor use; wood campfire when the site has one
+
+### Should
+
+- Convenient deploy for outdoor induction (vision: ultra-convenient or omit)
+- Coffee maker plumbing includes an easy shutoff for service
+
+### Could
+
+-
+
+## Design notes
+
+- Cook loads are inverter **120V AC**; fridge/freezer stays on **48V DC** (does not need the inverter running)
+- Coordinate AC peaks with instant HW ([electrical architecture](../../02-architecture/electrical.md))
+- Example oven product class noted; final SKUs TBD in [products.md](products.md)
+- Coffee line is post-UV treated water; product must accept pressurized (or regulated) feed
+
+## Decisions
+
+| Date | Decision | Why | Alternatives rejected | Status |
+|------|----------|-----|----------------------|--------|
+| 2026-10-13 | Plumbed thin PEX feed to coffee maker | Convenience | Manual fill only | decided |
+
+Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05-decisions/README.md)
+
+## Product / brand choices
+
+| Item | Brand / model | Est. cost | Why | Status | Link |
+|------|---------------|-----------|-----|--------|------|
+| Coffee maker (plumbed) | | | Accepts thin PEX feed | researching | |
+| Induction cooktop | | | 2-burner | researching | |
+| Oven / air-fryer | | | Ninja Flip class | researching | |
+| Microwave | | | Small | researching | |
+| Fridge / freezer 48V | | | | researching | |
+
+Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](../../06-shopping/bom.md)
+
+## Dependencies
+
+| Depends on | Why |
+|------------|-----|
+| | |
+
+| Depended on by | Why |
+|----------------|-----|
+| | |
+
+## Risks & open questions
+
+-
+
+## Stories (future Jira)
+
+See [stories.md](stories.md). Keep these outcome-oriented so they convert cleanly later.
+
+## References
+
+-
