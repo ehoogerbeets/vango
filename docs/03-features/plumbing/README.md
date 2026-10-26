@@ -3,7 +3,7 @@
 > Status: `researching`  
 > Priority: `P0`  
 > Jira Epic: _TBD (build phase)_  
-> Last updated: 2026-10-13
+> Last updated: 2026-10-15
 
 ## Summary
 
@@ -37,6 +37,7 @@ Fresh / grey / black water with dual fill, rain intake, **coarse → medium → 
 - Thin PEX run to **coffee maker** (after treatment train)
 - Instant electric heaters at sink and shower — **240V AC**
 - Warm-water storage tank + deployable solar thermal
+- **Side quick-connect** for deployable water/glycol solar thermal collector → warm/hot tank loop
 - Electric **level sensors** on fresh, grey, and black (app-readable)
 - **Electric ball valves** on grey and black dump paths (app open/close)
 - Dedicated fresh tank **drain / winterize** path
@@ -65,6 +66,7 @@ Fresh / grey / black water with dual fill, rain intake, **coarse → medium → 
 | Date | Decision | Why | Alternatives rejected | Status |
 |------|----------|-----|----------------------|--------|
 | 2026-10-13 | Instant EW + solar thermal warm tank | ADR-0003 | Propane HW | decided |
+| 2026-10-15 | Side quick-connect for water/glycol solar thermal | Deploy collector without roof plumbing dance | Hard-plumbed roof-only collector | proposed |
 | 2026-10-13 | Instant EW **240V** | Real tankless power needs | 120V tankless | decided |
 | 2026-10-13 | Coarse + medium + fine filters + UV | Particulate polish + kill bacteria/viruses | Minimal filter only | decided |
 | 2026-10-13 | **PEX-A** distribution | Flexible, easy install/repair | Copper / PEX-B-only / rigid | decided |
@@ -91,7 +93,8 @@ Fresh / grey / black water with dual fill, rain intake, **coarse → medium → 
 | Coffee-maker PEX stub / valve | | | Thin line | researching | |
 | Instant EW 240V (sink) | | | | researching | |
 | Instant EW 240V (shower) | | | | researching | |
-| Solar thermal collector | | | deployable | researching | |
+| Solar thermal collector | | | deployable water or glycol | researching | |
+| Thermal quick-connect (side) | | | Ext. port → warm/hot tank loop | researching | |
 | Warm tank | | | | researching | |
 | Fresh / grey / black tanks | | | light-weight | researching | |
 | Level sensors (×3) | | | app integration | researching | |

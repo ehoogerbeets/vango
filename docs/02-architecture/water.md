@@ -6,13 +6,13 @@
 
 ## Design goals
 
-- Fresh capacity target: TBD
+- Fresh tank: an **interior over-wheel-well** tank on the **passenger** side, inside the galley base (not an under-floor tank, so it does not drill the battery span). Stock Sprinter shape is about **20–22 gal** (S&B and others, ~44.5" × 12.5" × 16", level top). A **35 gal** passenger-side version exists (~46" × 13.5" × 20") and is the one that meets the ~30–40 gal end-state band. The trailer’s extra ~15 gal does not count when the trailer stays home. Grey and black stay **under the floor, driver side, behind the axle**.
 - **Under-mount tanks only behind the rear axle** — none under the B-pillar→axle battery span
 - Grey/black **dump line floor penetrations only behind the rear axle**
 - Wet fixtures (**sink + shower**) placed **aft** for gravity drain into those tanks ([layout](layout.md))
 - Grey / black: dump via **app-controlled electric ball valves**
 - Black handling: **low-flow marine electric-flush toilet**
-- Hot water: **240V instant electric** at sink and shower + **warm tank** preheated by **deployable solar thermal**
+- Hot water: **240V instant electric** at sink and shower + **warm tank** preheated by the **trailer’s deployable parabolic solar heater** (flexible mirror, black pipe at the focal line, hoses to a side **quick-connect**). Instant HW and the shower are post-MVP; the socket and tank stay in the plan
 - Fill flexibility: **pressurized** city/camp water **and** **trickle** (gravity / slow) fill
 - Rain: capture from roof, filter, into fresh system
 - Monitoring: **electric level sensors** on fresh, grey, and black (app-visible)
@@ -38,9 +38,10 @@ Grey/black drain lines are separate (not PEX drinking distribution) — material
 
 | Item | Allowed location | Forbidden |
 |------|------------------|-----------|
-| Under-mount fresh / grey / black tanks | **Behind rear axle** | Under floor from B-pillar → rear axle (battery; no room; no drill) |
+| Fresh tank | **Inside**, on the **passenger wheel well**, in the galley base | Not under the battery floor |
+| Grey / black tanks | **Under the floor, behind the rear axle, driver’s side** | Under floor from B-pillar → rear axle |
 | Grey/black outlet lines through floor | **Behind rear axle** | Through battery-zone floor |
-| Sink / shower drains | Short gravity runs to aft tanks | Long forward wet core that fights ADR-0005 |
+| Sink / shower drains | Short gravity runs to aft tanks. Toilet and shower on the **driver’s side**, grey and black tanks on that same side. Galley sink is on the **passenger side**; its drain crosses to the driver-side grey tank behind the axle | Long forward wet core that fights ADR-0005 |
 
 If aft under-mount packaging proves impossible, revisit **in-cabin** tanks as a fallback (see ADR-0005 alternatives) — do **not** drill the battery floor.
 
@@ -129,6 +130,8 @@ All filter housings + UV must be in a **highly accessible** service bay (vision:
 
 - Instant electric at **sink** and **shower** — product class is **240V** (high power; 120V units are not adequate for real flow/temp rise)
 - Warm storage tank preheated by deployable **solar thermal** to cut instant-EW runtime/energy
+- **Side-of-van quick-connect** for a deployable **water or glycol** solar thermal collector, plumbed to the warm/hot water tank/heater loop (post-MVP convenience detail; see [requirements](../01-van/requirements.md))
+- Loop fluid TBD: potable water vs glycol (freeze / contamination trade-offs for winterize)
 - Electrical implication: house AC plant must provide **240V** (split-phase / dual inverter / suitable inverter-charger) — see [electrical](electrical.md)
 
 ## Tank monitoring & remote dump
@@ -169,6 +172,7 @@ Must be able to **fully empty** the fresh tank and blow down / drain distributio
 | Instant electric at sink + shower | accepted | [ADR-0003](../05-decisions/0003-all-electric-house-systems.md) |
 | Instant EW voltage **240V** | accepted (direction) | this doc + [electrical](electrical.md) |
 | Solar thermal → warm storage tank | accepted | [ADR-0003](../05-decisions/0003-all-electric-house-systems.md) |
+| Side quick-connect for deployable thermal (water/glycol) | proposed | this doc + [requirements](../01-van/requirements.md) |
 | Fill filtration + coarse / medium / fine + **UV** | accepted | this doc |
 | Distribution piping **PEX-A** | accepted | this doc |
 | Thin PEX feed to coffee maker | accepted | this doc + [galley](../03-features/galley/README.md) |
@@ -181,7 +185,7 @@ Must be able to **fully empty** the fresh tank and blow down / drain distributio
 | Low-flow marine electric-flush toilet + black tank | accepted | [bathroom](../03-features/bathroom/README.md) |
 | Under-mount tanks + dump penetrations **aft of rear axle only** | accepted | [ADR-0005](../05-decisions/0005-traction-battery-floor-no-drill-zone.md) |
 | Wet core (sink/shower) aft for gravity | accepted | [layout](layout.md) |
-| Tank sizes | open | Placement region locked aft |
+| Tank sizes | planning | **3-day** fresh for two, navy-shower habit; **~30–40 gal** fresh band, not a purchased tank |
 | Pump voltage (12V vs 48V) | open | [electrical](electrical.md) |
 | Valve fail-safe / manual override | open | |
 | Rain first-flush / treatment details | open | |

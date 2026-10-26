@@ -31,12 +31,12 @@ Hard limits that every feature and purchase decision must respect. Soft / aspira
 | Vehicle budget (target) | **~$42K–$47K** used | New ~$70–80K rejected for now |
 | Standing height | Full upright for **6'2"** | Raw bay **6'7"** → **~5"** for floor+ceiling+clearance |
 | Roof type | Factory high-roof only | **No pop-top, no raised-roof conversion** |
-| Payload budget | **~2,624 lb** with 113 kWh (confirm sticker) | Drives light-weight everything |
+| Payload budget | **2,624 lb** with 113 kWh (confirm sticker) | Build + fluids + people + gear — track in [payload budget](../02-architecture/weight-and-balance.md) |
 | House energy | **Electricity only** + separate house battery | [ADR-0003](../05-decisions/0003-all-electric-house-systems.md) |
 | House DC bus | **48V** | Heat pump + fridge/freezer — [ADR-0004](../05-decisions/0004-48v-house-dc-bus.md) |
 | Traction→house power | **Not available** meaningfully | 12V tap cellphone-class only |
-| Home charging | Level 2 **11.5 kW** (owned) | DCFC required for road trips |
-| Tow package | Aftermarket later | Not factory |
+| Home charging | Level 2 **11.5 kW** (owned), **one EVSE shared** between traction and the house bank | DCFC required for road trips. Not both packs at once |
+| Tow package | **Aftermarket hitch is MVP** | Not factory. Bike rack for short trips; gear trailer for long trips. Tow rating 5,000 lb; GCWR 11,023 lb |
 | Max length / height / weight | e-Sprinter envelope | Exterior height still matters for garages, ferries, trees |
 | Driveway / garage fit | TBD | |
 | License / insurance class | TBD | |

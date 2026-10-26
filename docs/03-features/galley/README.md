@@ -3,7 +3,7 @@
 > Status: `researching`  
 > Priority: `P0`  
 > Jira Epic: _TBD (build phase)_  
-> Last updated: 2026-10-13
+> Last updated: 2026-10-15
 
 ## Summary
 
@@ -26,14 +26,15 @@ Cooking and food prep for two, located **aft near the shower** so the sink can g
 
 - No combustion fuels as installed galley energy
 - Work within e-Sprinter electrical / weight budgets ([ADR-0002](../../05-decisions/0002-mercedes-e-sprinter-platform.md))
-- **Aft placement** with wet core; sink drains toward aft tanks
+- **Aft, on the sliding-door / passenger side.** The tall fridge is the end **toward the bed**; the counter continues **aft toward the rear doors**. Sink drains across to the driver-side grey tank behind the axle ([layout](../../02-architecture/layout.md))
 - Cabinetry over battery floor span uses **OEM tie-downs only** if floor-mounted
 - **2-burner induction** cooktop (120V AC)
 - Combo **electric oven / air-fryer / toaster** (e.g. Ninja Flip class, 120V AC)
 - **Small microwave** (120V AC)
-- **Fridge / freezer** — **48V DC** ([ADR-0004](../../05-decisions/0004-48v-house-dc-bus.md))
+- **Fridge / freezer** — medium **12V DC** compressor (dual-hinge / dual-swing class); powered from 48V house via DC-DC — see [daily energy budget](../../02-architecture/daily-energy-budget.md) (ADR-0004 amend pending)
 - **Coffee maker** with dedicated thin **PEX-A** water feed from the treated fresh system (no manual reservoir filling) — [water](../../02-architecture/water.md)
 - Induction can move to **exterior AC outlet** for outdoor cooking
+- **Normal dinner is indoors** on the 2-burner induction (2026-10-25). Outdoor grill stays available; it is not the usual meal
 - **Electric grill** for outdoor use; wood campfire when the site has one
 
 ### Should
@@ -47,9 +48,9 @@ Cooking and food prep for two, located **aft near the shower** so the sink can g
 
 ## Design notes
 
-- Cook loads are inverter **120V AC**; fridge/freezer stays on **48V DC** (does not need the inverter running)
+- Cook loads are inverter **120V AC**; fridge stays on **DC** (12V via DC-DC — inverter not required for refrigeration)
 - Coordinate AC peaks with instant HW ([electrical architecture](../../02-architecture/electrical.md))
-- Example oven product class noted; final SKUs TBD in [products.md](products.md)
+- Fridge candidates: GE Profile 9.8 / Furrion Arctic 10.7 — [products.md](products.md)
 - Coffee line is post-UV treated water; product must accept pressurized (or regulated) feed
 
 ## Decisions
@@ -57,6 +58,7 @@ Cooking and food prep for two, located **aft near the shower** so the sink can g
 | Date | Decision | Why | Alternatives rejected | Status |
 |------|----------|-----|----------------------|--------|
 | 2026-10-13 | Plumbed thin PEX feed to coffee maker | Convenience | Manual fill only | decided |
+| 2026-10-15 | Target medium ~10 cu ft **12V** dual-hinge fridge | Residential capacity + DC efficiency | Propane absorption; tiny compressor fridges | proposed |
 
 Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05-decisions/README.md)
 
@@ -68,7 +70,7 @@ Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05
 | Induction cooktop | | | 2-burner | researching | |
 | Oven / air-fryer | | | Ninja Flip class | researching | |
 | Microwave | | | Small | researching | |
-| Fridge / freezer 48V | | | | researching | |
+| Fridge / freezer 12V | GE Profile 9.8 / Furrion Arctic 10.7 | | Dual-hinge class | candidate | [products](products.md) |
 
 Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](../../06-shopping/bom.md)
 

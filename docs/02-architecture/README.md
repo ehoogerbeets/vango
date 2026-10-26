@@ -6,9 +6,10 @@ Cross-feature design: how major systems fit together. Individual features own de
 |-----|---------|
 | [Layout](layout.md) | Floor plan, zones, ergonomics |
 | [Electrical](electrical.md) | Power architecture overview |
+| [Daily energy budget](daily-energy-budget.md) | Wh/day rollup → battery & solar sizing |
 | [Water](water.md) | Fresh / grey / hot water overview |
 | [Climate](climate.md) | Heat, cooling, insulation strategy |
-| [Weight & balance](weight-and-balance.md) | Payload budget across systems |
+| [Payload budget & balance](weight-and-balance.md) | Running weight vs 2,624 lb payload |
 | [Interfaces](interfaces.md) | What systems depend on each other |
 
 ## Rule of thumb

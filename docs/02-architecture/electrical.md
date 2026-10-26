@@ -7,13 +7,15 @@
 ## Design goals
 
 - Target off-grid nights: ~3 without want
-- Shore power: North America v1 — expect **120/240V** capability for instant HW (50A RV-style pedestal class TBD)
-- Home charge (traction): Level 2 **11.5 kW** already owned; DCFC on road trips
+- Shore power: **50A RV socket** on the van (120/240V) into the house inverter/charger. A **30A pedestal uses an adapter** into that socket. A second exterior socket is **J1772 into the house battery** (campsite or home EVSE). Traction charging stays on the Mercedes port at the front.
+- Home charge (traction): Level 2 **11.5 kW** already owned; DCFC on road trips. **One EVSE, shared.** Overnight it charges the drive battery **or** the house bank, not both at once
 - House storage: **separate 48V** LiFePO₄ bank (or solid-state later) — not the 113 kWh drive battery
 - **48V DC** bus for heat pump + fridge/freezer (and other DC loads as designed)
 - Inverter/charger: **120V + 240V** AC output — cooking mostly 120V; **instant HW is 240V**
-- Solar PV: TBD sizing (charge into 48V house)
-- Solar thermal: deployable collector preheats warm-water tank (see [water](water.md))
+- Solar PV: **fill the roof** except the reserved heat-pump opening. Target is a moderate-use day replaced by the roof. Shore power is the backup. **Hood solar is in scope** if it can live with hood heat and the wipers. Long-trip surplus also comes from **deployable solar on the trailer**
+- Solar thermal: deployable parabolic collector on the **trailer** preheats the van warm-water tank (see [water](water.md))
+- Trailer inlet: dedicated van-wall socket → **DC-DC into the 48V house bank**. Trailer batteries and MPPT stay on the trailer
+- House battery kWh is sized for the **future 48V heat pump** even though the first trip does not install it ([heating-cooling](../03-features/heating-cooling/README.md))
 - Controls power for tank sensors + electric dump valves (app) — see [connectivity](../03-features/connectivity/README.md)
 
 ## Voltage domains
@@ -37,10 +39,10 @@ flowchart TD
 
   batt --> dc48[48V DC bus]
   dc48 --> hp[Heat pump]
-  dc48 --> fridge[Fridge / freezer]
   dc48 --> other48[Other DC TBD]
 
-  batt --> dcdc[DC-DC / 12V?]
+  batt --> dcdc[DC-DC 48V to 12V]
+  dcdc --> fridge[Fridge / freezer 12V]
   dcdc --> lv[Pump / toilet / valves / sensors / controls]
 
   batt --> inv[Inverter]
@@ -58,7 +60,7 @@ flowchart TD
 | Load | Power domain | Notes |
 |------|--------------|-------|
 | Heat pump | **48V DC** | HVAC |
-| Fridge / freezer | **48V DC** | |
+| Fridge / freezer | **12V DC** (via 48V→12V DC-DC) | Medium dual-hinge class — see [daily energy budget](daily-energy-budget.md); ADR-0004 amend pending |
 | 2-burner induction | 120V AC | Indoor + movable to exterior outlet |
 | Combo oven / air-fry / toast | 120V AC | e.g. Ninja Flip class |
 | Small microwave | 120V AC | |
@@ -78,10 +80,11 @@ flowchart TD
 | Separate house battery | accepted | [ADR-0003](../05-decisions/0003-all-electric-house-systems.md) |
 | **48V DC** bus + heat pump + fridge | accepted | [ADR-0004](../05-decisions/0004-48v-house-dc-bus.md) |
 | Instant HW on **240V AC** | accepted | [water](water.md) |
-| House kWh | open | |
-| 12V derived bus for lights/valves/etc. | open | |
+| House kWh | open | Driven by [daily energy budget](daily-energy-budget.md). **Include the heat pump** even though first-trip install waits |
+| Fridge on 12V via DC-DC (vs native 48V) | proposed | GE / Furrion 12V candidates; amend ADR-0004 |
+| 12V derived bus for lights/valves/etc. | open | Same DC-DC domain as fridge likely |
 | Inverter topology (split-phase 120/240) | open | Must feed 240V EW + 120V cook |
-| Solar PV size | open | |
+| Solar PV size | open | Driven by daily energy budget |
 | Exterior AC circuit | open | GFCI / weatherproof |
 
 ## Interfaces

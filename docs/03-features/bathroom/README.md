@@ -12,7 +12,7 @@ Toilet + shower + storage in a space-efficient footprint **toward the rear of th
 ## Goals
 
 - Dedicated **toilet area**
-- Dedicated **shower area** (usable for 6'2" / comfortable for 5'2")
+- Dedicated **shower area** in the end state (usable for 6'2" / comfortable for 5'2"). **Not on the first trip** — toilet and a cold sink ship first. Habit once it exists: **navy showers** in the van, real showers at campgrounds
 - **Storage area** that reclaims unused bath/shower volume
 - Transitions must be quick and convenient — no wrestling with the layout every use
 - Align with eco, light weight, maintainability, and modern calm aesthetic
@@ -28,11 +28,13 @@ Toilet + shower + storage in a space-efficient footprint **toward the rear of th
 
 - Toilet area, shower area, and storage area as distinct roles (may share footprint over time)
 - Storage moves/swings clear of toilet and shower without hassle
-- Standing / shower clearance suitable for 6'2"
+- Standing / shower clearance suitable for 6'2" when the shower is built
+- First trip: toilet + cold sink. Leave aft volume and grey-tank capacity so a later navy-shower stall does not require a new tank
 - **Low-flow marine electric-flush toilet** (conventional marine style, not composting/cassette-as-primary)
 - Black tank + dump path for toilet waste (**tank + floor penetrations aft of rear axle only**)
-- **Aft placement** with galley wet core ([layout](../../02-architecture/layout.md))
+- **Aft, on the driver’s side**, so the toilet and shower gravity-drain to grey and black tanks on that same side ([layout](../../02-architecture/layout.md))
 - Easy to winterize with the rest of the van
+- Night trips are common: a clear, dark-friendly path from the bed to this toilet without disturbing the bed
 
 ### Should
 
@@ -56,6 +58,8 @@ Toilet + shower + storage in a space-efficient footprint **toward the rear of th
 |------|----------|-----|----------------------|--------|
 | 2026-10-13 | Low-flow marine electric-flush toilet + black tank | Familiar flush experience; low water use | Composting; cassette-as-primary | decided |
 | 2026-10-13 | Bathroom / shower aft | Gravity to aft under-mount tanks; no battery-floor penetrations | Forward wet bath; rear garage layout | decided |
+| 2026-10-25 | Indoor shower is **post-MVP** | First trip is toilet + cold sink | Shower stall on the first trip | decided |
+| 2026-10-25 | End-state shower habit is a **navy shower**; campgrounds for a real shower | Sizes water use without a residential shower | Daily full showers in the van | decided |
 
 Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05-decisions/README.md)
 
@@ -81,7 +85,8 @@ Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](
 
 ## Risks & open questions
 
--
+- Aft volume has to hold a later shower stall without moving the toilet or the tanks
+- Grey tank sized for navy showers even while the stall is still post-MVP
 
 ## Stories (future Jira)
 

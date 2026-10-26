@@ -16,7 +16,7 @@ The house electrical system uses a **48V DC** bus for major DC appliances, inclu
 | Appliance | Voltage |
 |-----------|---------|
 | Heat pump | **48V DC** |
-| Fridge / freezer | **48V DC** |
+| Fridge / freezer | **48V DC** *(under review — 12V candidates via DC-DC; see [daily energy budget](../02-architecture/daily-energy-budget.md))* |
 
 House battery chemistry remains LiFePO₄ (or solid-state later) per ADR-0003; pack topology should align with the **48V** bus (exact series string / BMS TBD).
 

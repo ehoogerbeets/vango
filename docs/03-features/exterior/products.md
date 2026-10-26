@@ -6,7 +6,7 @@ Purchase and brand decisions for this feature. Mirror important rows into the [m
 
 | SKU / item | Brand | Model | Qty | Est. unit $ | Est. total $ | Why this one | Vendor | Status | URL |
 |------------|-------|-------|-----|-------------|--------------|--------------|--------|--------|-----|
-| | | | | | | | | researching | |
+| Hitch bike rack | QuikrStuff | **Mach 2** | 1 | | | 2 e-bikes on the hitch for short trips | | candidate | |
 
 ## Rejected / not chosen
 

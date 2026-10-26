@@ -29,5 +29,8 @@ Shared terms so feature docs stay consistent.
 | Battery floor zone | e-Sprinter under-floor traction battery span: **B-pillar → rear axle** — no drill / no under-mount tanks / tie-down mounts only |
 | OEM tie-downs | Factory cargo floor attach points (pre-drilled) used for cabinetry in the battery floor zone |
 | Wet aft | Layout pattern: shower + galley toward rear doors for gravity drain to aft under-mount tanks |
+| RuuviTag Pro | Battery BLE sensor (temp / humidity / pressure) for interior zones |
+| Weather station | Exterior sensor suite (temp, pressure, wind, humidity) feeding OpenVan |
+| Solar thermal quick-connect | Side-of-van coupling for a deployable water/glycol collector → warm/hot tank loop |
 
 <!-- Add project-specific terms as we invent them. -->
