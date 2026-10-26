@@ -77,7 +77,7 @@ Weights are **installed / shipping net** where known. Prefer datasheet net weigh
 | Item | Status | Est. lb | Conf. | Source / notes |
 |------|--------|---------|-------|----------------|
 | Fresh tank (empty) | researching | TBD | | |
-| Fresh water (**full**) | researching | TBD | | **8.34 lb/gal** — size TBD |
+| Fresh water (**full**) | researching | **~292** | low | **35 gal × 8.34 lb/gal**. Tank shell still TBD |
 | Grey tank empty + **full** | researching | TBD | | Count full for worst case |
 | Black tank empty + **full** | researching | TBD | | |
 | Warm / hot tank + fluid | post-MVP | TBD | | Water or glycol |

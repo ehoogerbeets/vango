@@ -65,7 +65,7 @@ Fill Wh/day as products firm up. “Typical day” = mild weather, modest cookin
 |------|--------|--------------------------|--------------------|--------------|
 | Fridge / freezer | 12V via DC-DC | **1,065** | **1,630** | Furrion planning figures above |
 | Heat pump | 48V DC | TBD | TBD | Not on the first trip. **Still sizes the battery:** most of a high-desert day, **central sleep zone only**, spring–fall (not below ~40°F). |
-| Lights | 12V | TBD | TBD | LED — usually small |
+| Lights | **12V** | TBD | TBD | Puck and ambient LEDs — usually small |
 | Fresh pump + valves + sensors | 12V | TBD | TBD | Intermittent |
 | UV water irradiator | TBD | TBD | TBD | Often hours/day while using water |
 | Connectivity (Pi, Wi‑Fi, Ruuvi, weather) | 12V / low | TBD | TBD | Small vs fridge |

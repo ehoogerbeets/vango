@@ -6,7 +6,7 @@ Purchase and brand decisions for this feature. Mirror important rows into the [m
 
 | SKU / item | Brand | Model | Qty | Est. unit $ | Est. total $ | Why this one | Vendor | Status | URL |
 |------------|-------|-------|-----|-------------|--------------|--------------|--------|--------|-----|
-| | | | | | | | | researching | |
+| Fire extinguisher | | | 1 | | | First-trip mount, reachable from the bed path | | researching | |
 
 ## Rejected / not chosen
 

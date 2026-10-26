@@ -6,7 +6,8 @@ Purchase and brand decisions for this feature. Mirror important rows into the [m
 
 | SKU / item | Brand | Model | Qty | Est. unit $ | Est. total $ | Why this one | Vendor | Status | URL |
 |------------|-------|-------|-----|-------------|--------------|--------------|--------|--------|-----|
-| | | | | | | | | researching | |
+| Ceiling finish panel | | Thinnest paintable or fabric-faced sheet | TBD | | | Only ceiling layer that spends standing height | | researching | |
+| Wall plates | | Painted carbon or aluminum | TBD | | | Color waits on the designer palette | | researching | |
 
 ## Rejected / not chosen
 

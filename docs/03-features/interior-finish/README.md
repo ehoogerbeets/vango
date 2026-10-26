@@ -14,6 +14,8 @@ Calm modern cabin. Cabinet and drawer panels are **carbon skins over an end-grai
 - Maple-faced panels on balsa-core carbon for cabinet faces, drawer faces, drawer bottoms, and shelves
 - Edges sealed, then banded in maple, so the core and the carbon edge stay hidden
 - Match the calm, contemporary interior in [vision](../../00-overview/vision.md)
+- The van ceiling is a thin painted or fabric panel, not this maple face. Walls are painted carbon or aluminum plate — [walls and ceiling](../walls-ceiling/README.md)
+- Interior colors and the shop’s exterior paint are **one open palette**. A designer friend sets it. Do not pick colors in this doc first
 
 ## Non-goals
 

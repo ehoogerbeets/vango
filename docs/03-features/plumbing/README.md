@@ -3,7 +3,7 @@
 > Status: `researching`  
 > Priority: `P0`  
 > Jira Epic: _TBD (build phase)_  
-> Last updated: 2026-10-15
+> Last updated: 2026-10-25
 
 ## Summary
 
@@ -77,6 +77,8 @@ Fresh / grey / black water with dual fill, rain intake, **coarse → medium → 
 | 2026-10-13 | Electric ball valves grey+black + app | Convenient dump | Manual dump only | decided |
 | 2026-10-13 | Fresh drain / winterize path | Easy seasonal storage | Partial drain hacks | decided |
 | 2026-10-13 | Under-mount tanks + dump penetrations aft of rear axle only | Battery under floor | Mid-van under-mount / battery-floor drill | decided |
+| 2026-10-25 | Fresh tank is **~35 gal**, inside on the passenger wheel well | Trailer-less 3 days inside the 30–40 gal band | Stock ~20–22 gal wheel-well tank | decided |
+| 2026-10-25 | Rain is drinking water **after fill filtration and UV** | Same treatment as hose water | Utility-only rain; skipping rain capture | decided |
 
 ## Product / brand choices
 
@@ -96,7 +98,8 @@ Fresh / grey / black water with dual fill, rain intake, **coarse → medium → 
 | Solar thermal collector | | | deployable water or glycol | researching | |
 | Thermal quick-connect (side) | | | Ext. port → warm/hot tank loop | researching | |
 | Warm tank | | | | researching | |
-| Fresh / grey / black tanks | | | light-weight | researching | |
+| Fresh tank | | **~35 gal** passenger wheel well | Inside galley base | preferred | |
+| Grey / black tanks | | | light-weight, under floor aft | researching | |
 | Level sensors (×3) | | | app integration | researching | |
 | Electric ball valve (grey) | | | app actuated | researching | |
 | Electric ball valve (black) | | | app actuated | researching | |

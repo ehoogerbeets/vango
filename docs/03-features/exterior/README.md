@@ -3,7 +3,7 @@
 > Status: `researching`  
 > Priority: `P1`  
 > Jira Epic: _TBD (build phase)_  
-> Last updated: 2026-10-15
+> Last updated: 2026-10-25
 
 ## Summary
 
@@ -31,7 +31,7 @@ Outside shell integrations: **aftermarket trailer hitch**, **roof rainwater capt
 - Light-weight where possible
 - Respect battery-zone **no-drill** rules for any under-vehicle hardware ([ADR-0005](../../05-decisions/0005-traction-battery-floor-no-drill-zone.md))
 - Aft under-mount tanks/plumbing protected for road debris / clearance
-- **Trailer hitch on the first trip.** Short trips: bikes on a hitch rack. Long trips: tow the gear trailer ([storage](../storage/README.md))
+- **Trailer hitch on the first trip.** Short trips: bikes on a hitch rack. Long trips: tow the gear trailer ([storage](../storage/README.md)). A **shop** installs the hitch, a shocks upgrade, a front bumper with a winch, and the exterior paint ([constraints](../../00-overview/constraints.md))
 - Van-wall socket for the trailer: DC-DC surplus charge into the house bank, and the warm-tank hoses from the trailer’s solar water heater
 - Two camp sockets: **50A shore** (120/240V; 30A pedestals via adapter) and **J1772**
 
@@ -43,7 +43,7 @@ Outside shell integrations: **aftermarket trailer hitch**, **roof rainwater capt
 
 ### Could
 
-- Awning / outdoor shower rinse integration later
+- Outdoor sprinkle is the bathroom handheld on a hook at the **back**, not a second shower. Ground platform, not a body step. Awning still later
 - Side **quick-connect** for deployable solar thermal (plumbing owns loop; exterior owns mounting/port) — [water](../../02-architecture/water.md)
 - Mount point for external **weather station** ([connectivity](../connectivity/README.md))
 
@@ -61,8 +61,10 @@ Outside shell integrations: **aftermarket trailer hitch**, **roof rainwater capt
 | Date | Decision | Why | Alternatives rejected | Status |
 |------|----------|-----|----------------------|--------|
 | 2026-10-13 | Roof rain capture → filter → fresh tank | Eco top-up | No rain system | decided |
+| 2026-10-25 | That rain is **drinking water after fill filters and UV** | Same standard as hose water | Utility-only rain tank | decided |
 | 2026-10-13 | No free drill for slider step in battery zone | HV safety | ICE-van style step mounts | decided |
 | 2026-10-25 | **Hitch is MVP** | Bike rack on short trips; trailer on long trips | Hitch as a later add | decided |
+| 2026-10-25 | Shop installs **hitch, shocks, front bumper + winch, exterior paint**. Edwin builds the rest | Split the jobs that need a shop | A shop conversion; DIY hitch and paint | decided |
 | 2026-10-25 | Short-trip bikes on a **QuikrStuff Mach 2** hitch rack | Keeps bikes out of the cabin | Bikes inside; trailer required for any ride | candidate |
 | 2026-10-25 | Exterior **50A** shore socket plus a **J1772** socket into the **house** battery | 50A covers later 240V water heat; 30A sites use an adapter. Traction stays on the factory front port | 30A inlet as the only shore socket; J1772 into the traction pack | decided |
 
@@ -90,7 +92,7 @@ Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](
 
 ## Risks & open questions
 
-- First-flush design and when we treat rain as potable vs utility-only
+- Rain is drinking water after fill filtration and UV. First-flush / leaf screen before those filters is still open
 - Convenience of any deployable bits vs vision rule
 
 ## Stories (future Jira)

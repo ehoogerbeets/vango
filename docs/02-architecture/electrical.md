@@ -22,10 +22,10 @@
 
 | Domain | Used for |
 |--------|----------|
-| **48V DC** | Heat pump, fridge/freezer, house battery bus; other DC TBD |
+| **48V DC** | Heat pump, house battery bus; other DC TBD |
+| **12V DC** | **Puck and ambient lights**, fridge (via DC-DC); pumps and valves still open |
 | **120V AC** | Induction, oven/air-fryer, microwave, exterior outlet (and similar) |
 | **240V AC** | Instant electric water heaters (sink + shower) — high power |
-| Low-voltage DC (12V?) | Lights / small electronics / many pumps & valves — derive from 48V TBD |
 
 ## Block diagram
 
@@ -42,6 +42,7 @@ flowchart TD
   dc48 --> other48[Other DC TBD]
 
   batt --> dcdc[DC-DC 48V to 12V]
+  dcdc --> lights[12V puck and ambient lights]
   dcdc --> fridge[Fridge / freezer 12V]
   dcdc --> lv[Pump / toilet / valves / sensors / controls]
 
@@ -60,6 +61,7 @@ flowchart TD
 | Load | Power domain | Notes |
 |------|--------------|-------|
 | Heat pump | **48V DC** | HVAC |
+| Cabin lights | **12V DC** | Puck and ambient. Travel-hardened fixtures are 12V, so they sit on the 48V→12V branch |
 | Fridge / freezer | **12V DC** (via 48V→12V DC-DC) | Medium dual-hinge class — see [daily energy budget](daily-energy-budget.md); ADR-0004 amend pending |
 | 2-burner induction | 120V AC | Indoor + movable to exterior outlet |
 | Combo oven / air-fry / toast | 120V AC | e.g. Ninja Flip class |
@@ -82,7 +84,7 @@ flowchart TD
 | Instant HW on **240V AC** | accepted | [water](water.md) |
 | House kWh | open | Driven by [daily energy budget](daily-energy-budget.md). **Include the heat pump** even though first-trip install waits |
 | Fridge on 12V via DC-DC (vs native 48V) | proposed | GE / Furrion 12V candidates; amend ADR-0004 |
-| 12V derived bus for lights/valves/etc. | open | Same DC-DC domain as fridge likely |
+| Cabin lights **12V puck and ambient** | accepted | Supersedes the 2026-10-25 native-48V choice. Travel-hardened lights are 12V |
 | Inverter topology (split-phase 120/240) | open | Must feed 240V EW + 120V cook |
 | Solar PV size | open | Driven by daily energy budget |
 | Exterior AC circuit | open | GFCI / weatherproof |

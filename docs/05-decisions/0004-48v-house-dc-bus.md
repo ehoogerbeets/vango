@@ -58,13 +58,13 @@ Inverter/charger AC domains: **120V** for induction, oven/air-fryer, microwave, 
 ### Negative / trade-offs
 
 - 48V component ecosystem is smaller than 12V — plan purchases carefully
-- Still need some low-voltage DC for lights/electronics (12V or 24V derived from 48V TBD)
+- Cabin lights are **12V puck and ambient** (2026-10-26), on a derived 12V branch. The 2026-10-25 native-48V light choice is withdrawn: travel-hardened fixtures are 12V. Pumps and valves may share that branch
 - Safety: 48V needs proper fusing, service discipline, and clear labeling
 
 ### Follow-ups
 
 - [ ] House battery pack voltage / BMS / kWh sizing
-- [ ] Whether lights and pumps are native 48V or stepped down to 12V
+- [x] Lights are **12V puck and ambient** (2026-10-26). Pumps and valves are still open
 - [ ] Pick heat pump and fridge/freezer products → feature `products.md` + BOM
 - [ ] Update load spreadsheet: DC vs AC columns
 

@@ -3,7 +3,7 @@
 > Status: `researching`  
 > Priority: `P0`  
 > Jira Epic: _TBD (build phase)_  
-> Last updated: 2026-10-13
+> Last updated: 2026-10-25
 
 ## Summary
 
@@ -33,6 +33,9 @@ Toilet + shower + storage in a space-efficient footprint **toward the rear of th
 - **Low-flow marine electric-flush toilet** (conventional marine style, not composting/cassette-as-primary)
 - Black tank + dump path for toilet waste (**tank + floor penetrations aft of rear axle only**)
 - **Aft, on the driver’s side**, so the toilet and shower gravity-drain to grey and black tanks on that same side ([layout](../../02-architecture/layout.md))
+- The shower is the **rearmost** slice of that side, directly in front of the **driver’s rear door**. Opening that door exposes the shower hardware
+- One **low-flow handheld** on a long hose, with two parks: one aimed into the stall, and one on the **back of the van** for an outside sprinkle
+- Outside use stands on a **small platform set on the ground**, so feet stay out of the mud. It is not a step bolted to the van
 - Easy to winterize with the rest of the van
 - Night trips are common: a clear, dark-friendly path from the bed to this toilet without disturbing the bed
 
@@ -48,7 +51,8 @@ Toilet + shower + storage in a space-efficient footprint **toward the rear of th
 ## Design notes
 
 - Flagship example of multi-use space from [vision](../../00-overview/vision.md)
-- Layout integration TBD in [layout architecture](../../02-architecture/layout.md)
+- The stall is post-MVP, with the indoor navy shower. The rear-door slice, the long hose, and the outside hook have to be left in the first-trip layout so this does not move the toilet or the tanks
+- A ground platform lives with the camp kit (van or trailer), not as bodywork
 - Water / HW / flush supply: [water architecture](../../02-architecture/water.md)
 - Electric flush is a house DC load — confirm product voltage vs 48V bus / DC-DC
 
@@ -60,6 +64,7 @@ Toilet + shower + storage in a space-efficient footprint **toward the rear of th
 | 2026-10-13 | Bathroom / shower aft | Gravity to aft under-mount tanks; no battery-floor penetrations | Forward wet bath; rear garage layout | decided |
 | 2026-10-25 | Indoor shower is **post-MVP** | First trip is toilet + cold sink | Shower stall on the first trip | decided |
 | 2026-10-25 | End-state shower habit is a **navy shower**; campgrounds for a real shower | Sizes water use without a residential shower | Daily full showers in the van | decided |
+| 2026-10-25 | Shower is the driver’s-side volume **against the rear door**, and the same handheld also sprinkles outside | Open the door, park the head on the back of the van, stand on a ground platform | A separate outdoor shower; a side-door rinse | decided |
 
 Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05-decisions/README.md)
 

@@ -1,7 +1,7 @@
 # Vision & Goals
 
 > Status: `researching`  
-> Last updated: 2026-10-13
+> Last updated: 2026-10-25
 
 ## Elevator pitch
 
@@ -45,7 +45,7 @@ We'll know the build worked when we can:
 | Edwin | Primary / tall | 58, **6'2"** — ceiling, bed length, seating, shower height critical |
 | Wife | Co-traveler | 60, **5'2"** — reach, step heights, shared ergonomics matter too |
 
-Typical occupancy: **two**. (Guest capacity TBD if needed later.)
+Typical occupancy: **two**. A rare overnight guest uses the **settee**. There is no third mattress and no upper bunk to design.
 
 ## Bathroom vision (high level)
 

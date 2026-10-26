@@ -3,7 +3,7 @@
 > Status: `researching`  
 > Priority: `P0`  
 > Jira Epic: _TBD (build phase)_  
-> Last updated: 2026-10-13
+> Last updated: 2026-10-26
 
 ## Summary
 
@@ -31,6 +31,7 @@ Separate house electrical system for the e-Sprinter: **48V DC** battery bus for 
 - Solar PV charging into the house bank (sizing TBD)
 - North America shore power **120/240V** capable (v1)
 - DC power for pump, toilet, dump valves, tank sensors / controls
+- **12V puck and ambient lights**, fed from the 48V house battery through a DC-DC converter
 
 ### Should
 
@@ -39,7 +40,7 @@ Separate house electrical system for the e-Sprinter: **48V DC** battery bus for 
 
 ### Could
 
-- Derived 12V bus for lights / small electronics
+- Same 12V branch for pumps and controls, if those parts are not native 48V. Lights already use it
 
 ## Design notes
 
@@ -51,6 +52,8 @@ Separate house electrical system for the e-Sprinter: **48V DC** battery bus for 
 |------|----------|-----|----------------------|--------|
 | 2026-10-13 | Separate house battery | No traction export | V2L / traction tap | decided |
 | 2026-10-13 | 48V DC bus | Heat pump + fridge are 48V DC | 12V / 24V / all-AC | decided |
+| 2026-10-25 | Cabin lights are native 48V LEDs | Stay on the house bus | 12V lamps off a converter | superseded |
+| 2026-10-26 | Cabin lights are **12V puck and ambient** | Travel-hardened fixtures are almost always 12V | Native 48V LEDs | decided |
 
 Detail write-ups: [decisions.md](decisions.md) · ADRs: 0003, 0004
 
@@ -80,7 +83,7 @@ Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](
 ## Risks & open questions
 
 - AC load peaks vs inverter size
-- Whether lights/pumps are native 48V or 12V derived
+- Whether pumps, the toilet, and valves are native 48V or share the 12V lighting branch
 
 ## Stories (future Jira)
 

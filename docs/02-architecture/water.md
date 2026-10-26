@@ -6,7 +6,7 @@
 
 ## Design goals
 
-- Fresh tank: an **interior over-wheel-well** tank on the **passenger** side, inside the galley base (not an under-floor tank, so it does not drill the battery span). Stock Sprinter shape is about **20–22 gal** (S&B and others, ~44.5" × 12.5" × 16", level top). A **35 gal** passenger-side version exists (~46" × 13.5" × 20") and is the one that meets the ~30–40 gal end-state band. The trailer’s extra ~15 gal does not count when the trailer stays home. Grey and black stay **under the floor, driver side, behind the axle**.
+- Fresh tank: an **interior over-wheel-well** tank on the **passenger** side, inside the galley base (not an under-floor tank, so it does not drill the battery span). Stock Sprinter shape is about **20–22 gal** (S&B and others, ~44.5" × 12.5" × 16", level top). A **35 gal** passenger-side version (~46" × 13.5" × 20") is the chosen tank. It is the one in the ~30–40 gal band, and it is what a trailer-less 3 days is sized on (toilet, sink, and coffee on the first trip; navy showers later). The trailer’s extra ~15 gal does not count when the trailer stays home. Grey and black stay **under the floor, driver side, behind the axle**.
 - **Under-mount tanks only behind the rear axle** — none under the B-pillar→axle battery span
 - Grey/black **dump line floor penetrations only behind the rear axle**
 - Wet fixtures (**sink + shower**) placed **aft** for gravity drain into those tanks ([layout](layout.md))
@@ -17,7 +17,8 @@
 - Rain: capture from roof, filter, into fresh system
 - Monitoring: **electric level sensors** on fresh, grey, and black (app-visible)
 - Fresh tank: dedicated **empty / winterize** path
-- Outdoor shower / rinse: TBD
+- Outdoor rinse: the **same** post-MVP handheld as the stall. A second hook on the back of the van, used with the driver’s rear door open and a platform on the ground ([bathroom](../03-features/bathroom/README.md))
+- Solar-thermal loop fluid (potable water vs glycol): **deferred** until the warm tank is designed
 - Winterize: easy (vision) — drain fresh + protect distribution + heaters as designed
 - Service: filters and UV in highly accessible locations (vision: maintainability)
 - Distribution piping: **PEX-A** throughout (flexible, easy install/repair)
@@ -131,7 +132,7 @@ All filter housings + UV must be in a **highly accessible** service bay (vision:
 - Instant electric at **sink** and **shower** — product class is **240V** (high power; 120V units are not adequate for real flow/temp rise)
 - Warm storage tank preheated by deployable **solar thermal** to cut instant-EW runtime/energy
 - **Side-of-van quick-connect** for a deployable **water or glycol** solar thermal collector, plumbed to the warm/hot water tank/heater loop (post-MVP convenience detail; see [requirements](../01-van/requirements.md))
-- Loop fluid TBD: potable water vs glycol (freeze / contamination trade-offs for winterize)
+- Loop fluid (potable water vs glycol) waits on the warm-tank design. Freeze and contamination trade-offs stay open on purpose
 - Electrical implication: house AC plant must provide **240V** (split-phase / dual inverter / suitable inverter-charger) — see [electrical](electrical.md)
 
 ## Tank monitoring & remote dump
@@ -158,7 +159,7 @@ Electric flush load is a house-electrical consumer (voltage domain TBD — often
 ## Rain capture notes
 
 - Aligns with eco-friendly vision; still needs convenient deploy/stow of any movable bits (vision: ultra-convenient or omit)
-- Treat rain as **non-potable until filtered** — fill filtration (+ any dedicated rain stage) is mandatory before the fresh tank
+- Rain is **drinking water after fill filtration and UV**, on the same path as hose and trickle water. It is not drunk off the roof. A debris / first-flush stage before the fill filters is still open
 - Roof layout must coexist with solar PV, solar thermal stowage, fans, and heat pump exterior bits — see [exterior](../03-features/exterior/README.md)
 
 ## Winterize (fresh side)
@@ -178,14 +179,14 @@ Must be able to **fully empty** the fresh tank and blow down / drain distributio
 | Thin PEX feed to coffee maker | accepted | this doc + [galley](../03-features/galley/README.md) |
 | Accumulator / pressure tank | accepted | this doc |
 | Dual fill (pressurized + trickle) | accepted | this doc |
-| Roof rain capture → filtered → fresh | accepted | this doc |
+| Roof rain → fill filters + UV → **drinking water** | accepted | this doc |
 | Electric level sensors on fresh/grey/black | accepted | this doc |
 | App-controlled electric ball valves (grey + black dump) | accepted | this doc |
 | Fresh tank drain / winterize path | accepted | this doc |
 | Low-flow marine electric-flush toilet + black tank | accepted | [bathroom](../03-features/bathroom/README.md) |
 | Under-mount tanks + dump penetrations **aft of rear axle only** | accepted | [ADR-0005](../05-decisions/0005-traction-battery-floor-no-drill-zone.md) |
 | Wet core (sink/shower) aft for gravity | accepted | [layout](layout.md) |
-| Tank sizes | planning | **3-day** fresh for two, navy-shower habit; **~30–40 gal** fresh band, not a purchased tank |
+| Fresh tank **~35 gal** | accepted | Passenger wheel-well tank inside the galley base. ~292 lb of water at 8.34 lb/gal |
 | Pump voltage (12V vs 48V) | open | [electrical](electrical.md) |
 | Valve fail-safe / manual override | open | |
 | Rain first-flush / treatment details | open | |

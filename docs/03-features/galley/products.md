@@ -13,7 +13,8 @@ Energy math for fridge candidates: [daily energy budget](../../02-architecture/d
 | Induction cooktop | | 2-burner 120V | 1 | | | | | researching | |
 | Oven / air-fryer | | Ninja Flip class 120V | 1 | | | | | researching | |
 | Microwave | | Small 120V | 1 | | | | | researching | |
-| Coffee maker | | Plumbed PEX feed | 1 | | | | | researching | |
+| Coffee maker | Keurig or Nespresso | **Keurig Mini** or a Nespresso pod machine | 1 | | | Plumbed PEX feed; short 120V heat cycle | | preferred | |
+| Countertop | Paperstone | Recycled-paper solid surface | 1 | | | Eco counter; induction inset and sink cutout | | preferred | https://paperstoneproducts.com/products/ |
 
 ## Rejected / not chosen
 

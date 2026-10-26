@@ -33,8 +33,8 @@ Platform decision: [ADR-0002](../05-decisions/0002-mercedes-e-sprinter-platform.
 
 ```mermaid
 flowchart TD
-  raw["6'7\" raw interior"] --> minus["minus 6'2\" occupant"]
-  minus --> budget["5\" budget: floor + ceiling + overhead clearance"]
+  raw["6'7#quot; raw interior"] --> minus["minus 6'2#quot; occupant"]
+  minus --> budget["5#quot; budget: floor + ceiling + overhead clearance"]
 ```
 
 Track actual material thicknesses in floor / insulation / ceiling feature docs.

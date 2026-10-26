@@ -108,7 +108,7 @@ Strap systems (EuroLoft / Tec) are effectively **hang-from-above** (belts from h
 
 ### Guest / mid-height mode (settee as spare bed)
 
-Idea: stop the elevator **partway** so someone can sleep on the **settee below**, with the platform parked as an upper bunk or just out of the way.
+A rare guest sleeps on the **settee**. Stop the elevator **partway** and park the platform above them. There is **no third mattress** and **no upper bunk** to engineer. Couple sleep stays fully down on the settee backs.
 
 ```mermaid
 flowchart TD
@@ -371,6 +371,7 @@ Score notes:
 | 2026-10-25 | Elevator bed; sleep on settee backs | Day lounge + stable night platform | Hang-only sleep; fixed bed | proposed |
 | 2026-10-25 | Rank lifts: **C ≥ A ≫ B**; drop E/F/D | Weight / use / repair / reliability scoring | HappiJac unless payload frees up | researching |
 | 2026-10-25 | N–S sleep; ≤4" mattress; light ceiling-like platform | Tall sleeper + headroom + unmade-bed UX | E–W sleep; thick hybrid mattress | proposed |
+| 2026-10-25 | Rare guest on the **settee only** | One spare bed without a third mattress | Upper bunk; a dedicated third berth | decided |
 
 Detail: [decisions.md](decisions.md)
 
@@ -406,7 +407,7 @@ Full list: [products.md](products.md)
 - East-west vs north-south bed vs aisle
 - Mattress thickness vs ceiling tuck and lift stroke
 - Actuator geometry: hang-from-above vs push-through-settee
-- Guest mid-height: clearance, mechanical locks, whether upper bunk is in scope
+- Guest mid-height: clearance and mechanical locks. Upper bunk is out of scope
 - Which lift family to buy vs DIY actuators
 - Failure mode: bed stuck up (manual lower) vs stuck down (driveability / visibility)
 

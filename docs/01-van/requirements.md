@@ -1,7 +1,7 @@
 # Van & Conversion Requirements
 
 > Status: `researching`  
-> Last updated: 2026-10-15
+> Last updated: 2026-10-25
 
 Platform is locked ([ADR-0002](../05-decisions/0002-mercedes-e-sprinter-platform.md)). This doc defines what the **MVP conversion** must deliver for a first usable trip, optional post-MVP adds, plus platform capacity targets.
 
@@ -22,6 +22,7 @@ Minimum for a shakedown / first real trip. Features that are awkward or unused s
 | Countertop | Food prep surface | [galley](../03-features/galley/README.md) |
 | Windows | Daylight and views | [windows-ventilation](../03-features/windows-ventilation/README.md) |
 | Trailer hitch | Aftermarket. Short trips carry bikes on a hitch rack. Longer trips tow a gear trailer | [exterior](../03-features/exterior/README.md), [storage](../03-features/storage/README.md) |
+| Fire extinguisher | First-trip safety item. Smoke, CO, cameras, a safe, and cabinet locks wait | [safety-security](../03-features/safety-security/README.md) |
 
 ## Nice-to-haves (post-MVP)
 
@@ -87,7 +88,9 @@ Optional — add only if we see the need. Payload, complexity, and “ultra-conv
 | Electric-extending awning | Side of van |
 | Trailer hitch | Promoted to MVP — see must-haves. Bike rack candidate: **QuikrStuff Mach 2** |
 | Electric fold-out step | Under sliding door |
-| Winch | Front bumper |
+| Winch + front bumper | **Shop install.** In the build, not a first-trip must. See [constraints](../00-overview/constraints.md) |
+| Shocks upgrade | **Shop.** Spec still open |
+| Exterior paint | **Shop.** Color waits on the shared interior/exterior palette |
 | 4-point leveling jacks | |
 
 ### Windows & glazing
@@ -113,7 +116,7 @@ Optional — add only if we see the need. Payload, complexity, and “ultra-conv
 | Item | Notes |
 |------|-------|
 | Security cameras + motion detectors | |
-| Smoke / CO detectors | Strong candidate to promote early |
+| Smoke / CO detectors | Not on the first trip. Extinguisher is the MVP safety item |
 | Hotel-style safe | Permanently attached; laptops etc. |
 | Magnetic cabinet locks | Stay locked while driving |
 

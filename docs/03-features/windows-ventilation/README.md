@@ -45,6 +45,7 @@ Add cabin glazing for daylight and views (MVP), plus optional tint / smart film 
 - Preferred unit: **Arctic Tern** dual-pane acrylic awning window, Classic or Flat — [products.md](products.md). Includes propped openings, an integral bug screen, and an integral blackout shade with a reflective face.
 - A ceramic coat on that acrylic is wanted as an extra heat layer. Confirm with Tern first; their notes treat the pane as not a film-tint product.
 - Cuts from the floor plan ([layout](../../02-architecture/layout.md)): driver’s wall **behind the long settee**; one **in the sliding door**; passenger wall **behind the induction cooktop** (also the cook vent); **passenger rear door**. Optional extra on the driver’s wall **forward of the toilet**, cabinets around it. The driver’s rear door is not called out. The sash screen does not cover a fully open sliding door.
+- City nights need **blackout and quiet**, and the van may still look like a camper. The Tern integral blackout shade is the cabin darkening. No stealth exterior.
 
 ## Decisions
 

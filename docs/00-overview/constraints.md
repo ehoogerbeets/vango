@@ -1,7 +1,7 @@
 # Constraints
 
 > Status: `researching`  
-> Last updated: 2026-10-13
+> Last updated: 2026-10-25
 
 Hard limits that every feature and purchase decision must respect. Soft / aspirational items stay in [vision](vision.md).
 
@@ -53,18 +53,23 @@ Hard limits that every feature and purchase decision must respect. Soft / aspira
 
 | Constraint | Value | Notes |
 |------------|-------|-------|
-| Occupants (typical / max) | 2 / TBD | Couple; sizes 6'2" and 5'2" |
+| Occupants (typical / max) | **2** / rare settee guest | Couple; sizes 6'2" and 5'2". A guest sleeps on the settee. No third mattress |
 | Climate / seasons | Mostly good-weather | Easy winterize; occasional winter trips |
 | Off-grid nights target | ~3 nights without want | Longer trips mix ~¼–⅓ hookups |
-| Stealth / urban camping | TBD | Some city nights expected |
-| Pets | TBD | |
+| Stealth / urban camping | **Quiet city nights** | Blackout and quiet. A camper look is fine. Not a stealth cargo van |
+| Pets | **None** | Do not size floor, ventilation, or storage for an animal |
 | Overseas use | Nice-to-have | Europe / AU / NZ do **not** drive v1 design |
 
 ## Skills & build approach
 
-<!-- DIY vs pro shop, tools available, willingness to learn systems (electrical, plumbing, carpentry). -->
+Edwin builds the conversion: interior, electrical, plumbing, windows, and cabinetry. A shop does only:
 
--
+- Suspension **shocks** upgrade
+- Trailer **hitch** (already an MVP item)
+- **Front bumper with a winch**
+- **Exterior paint**
+
+Interior and exterior colors are one scheme, still open. A designer friend sets the palette before paint is ordered.
 
 ## Soft preferences (not hard constraints)
 
