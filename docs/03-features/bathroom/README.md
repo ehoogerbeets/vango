@@ -36,7 +36,7 @@ Toilet + shower + storage in a space-efficient footprint **toward the rear of th
 - The shower is the **rearmost** slice of that side, directly in front of the **driver’s rear door**. Opening that door exposes the shower hardware
 - One **low-flow handheld** on a long hose, with two parks: one aimed into the stall, and one on the **back of the van** for an outside sprinkle
 - Outside use stands on a **small platform set on the ground**, so feet stay out of the mud. It is not a step bolted to the van
-- Easy to winterize with the rest of the van
+- Shower hot and cold are in the compressed-air blow-out with the rest of the van ([water](../../02-architecture/water.md#winterize-fresh-side))
 - Night trips are common: a clear, dark-friendly path from the bed to this toilet without disturbing the bed
 
 ### Should
@@ -52,6 +52,7 @@ Toilet + shower + storage in a space-efficient footprint **toward the rear of th
 
 - Flagship example of multi-use space from [vision](../../00-overview/vision.md)
 - The stall is post-MVP, with the indoor navy shower. The rear-door slice, the long hose, and the outside hook have to be left in the first-trip layout so this does not move the toilet or the tanks
+- The mirror lives on the galley cabinet beside the sink, not in this stall ([interior finish](../interior-finish/README.md))
 - A ground platform lives with the camp kit (van or trailer), not as bodywork
 - Water / HW / flush supply: [water architecture](../../02-architecture/water.md)
 - Electric flush is a house DC load — confirm product voltage vs 48V bus / DC-DC
@@ -73,7 +74,7 @@ Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05
 | Item | Brand / model | Est. cost | Why | Status | Link |
 |------|---------------|-----------|-----|--------|------|
 | Marine electric-flush toilet | | | Low-flow | researching | |
-| Black tank | | | Size TBD | researching | |
+| Black tank | | **~9 gal** | With ~26 gal grey; sum equals the 35 gal fresh tank | preferred | |
 
 Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](../../06-shopping/bom.md)
 
@@ -91,7 +92,7 @@ Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](
 ## Risks & open questions
 
 - Aft volume has to hold a later shower stall without moving the toilet or the tanks
-- Grey tank sized for navy showers even while the stall is still post-MVP
+- Grey is **~26 gal** and black is **~9 gal**, summing to the 35 gal fresh tank. Confirm the marine toilet’s flush volume still fits in 9 gal for three days
 
 ## Stories (future Jira)
 

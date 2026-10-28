@@ -1,124 +1,85 @@
 # Van & Conversion Requirements
 
 > Status: `researching`  
-> Last updated: 2026-10-25
+> Last updated: 2026-10-28
 
-Platform is locked ([ADR-0002](../05-decisions/0002-mercedes-e-sprinter-platform.md)). This doc defines what the **MVP conversion** must deliver for a first usable trip, optional post-MVP adds, plus platform capacity targets.
+Platform is locked ([ADR-0002](../05-decisions/0002-mercedes-e-sprinter-platform.md)). Three lists:
+
+1. **MVP** — the first usable trip.
+2. **Completes the van** — we will install these after the MVP. Brands and sizes wait until we know how much we need, which is also what decides cheap versus expensive. The van is finished when this list is done.
+3. **Aspirational** — may never be installed. The winch is here.
 
 ## MVP must-haves
 
 Minimum for a shakedown / first real trip. Features that are awkward or unused should still be omitted per [vision](../00-overview/vision.md) — but nothing below is optional for MVP.
 
+Shocks and exterior paint are on this list because the shop does them before the conversion starts.
+
 | Capability | Notes | Feature |
 |------------|-------|---------|
+| Shocks | **Shop, before the rest of the build.** Spec still open | [exterior](../03-features/exterior/README.md) |
+| Exterior paint | **Shop, before the rest of the build.** One palette with the interior, after the designer consult | [exterior](../03-features/exterior/README.md) |
 | Bed | Comfortable sleep for two; **push-button elevator** raises to ceiling by day, **settles on settee / chair backs** at night | [bed-sleep](../03-features/bed-sleep/README.md) |
 | Electrical system | House batteries; lights; cooktop; fridge/freezer; shore power; AC / 12V / USB outlets | [electrical-system](../03-features/electrical-system/README.md), [galley](../03-features/galley/README.md) |
-| Cold water system | Fresh, grey, and black tanks + plumbing | [plumbing](../03-features/plumbing/README.md) |
+| Cold water system | Fresh, grey, and black tanks + plumbing. **Dump valves and level sensors are part of this**, because the waste tanks have to empty and you have to know when they are full | [plumbing](../03-features/plumbing/README.md), [connectivity](../03-features/connectivity/README.md) |
 | Flush toilet | In bathroom area | [bathroom](../03-features/bathroom/README.md) |
 | Kitchen sink + faucet | Cold water at MVP. Indoor shower and hot water wait | [galley](../03-features/galley/README.md), [plumbing](../03-features/plumbing/README.md) |
 | Settee | Seating for living / dining | layout / interior |
 | Table | Eating and working | layout / galley |
 | Storage cabinets | Food, clothes, sundries | [storage](../03-features/storage/README.md) |
 | Countertop | Food prep surface | [galley](../03-features/galley/README.md) |
-| Windows | Daylight and views | [windows-ventilation](../03-features/windows-ventilation/README.md) |
 | Trailer hitch | Aftermarket. Short trips carry bikes on a hitch rack. Longer trips tow a gear trailer | [exterior](../03-features/exterior/README.md), [storage](../03-features/storage/README.md) |
-| Fire extinguisher | First-trip safety item. Smoke, CO, cameras, a safe, and cabinet locks wait | [safety-security](../03-features/safety-security/README.md) |
+| Fire extinguisher | First-trip safety item. Smoke and CO, and the safe, come when the van is finished. Cameras and cabinet locks may never | [safety-security](../03-features/safety-security/README.md) |
 
-## Nice-to-haves (post-MVP)
+## Completes the van (after MVP)
 
-Optional — add only if we see the need. Payload, complexity, and “ultra-convenient or omit” still apply. Some items already appear in architecture notes as design intent; they remain **non-MVP** until promoted.
+Installed after the first trip. Product picks wait. The van is complete when these are in.
 
-### Climate & ventilation
+| Item | Notes | Feature |
+|------|-------|---------|
+| Windows | Separate project. Arctic Tern Overland classic double-pane acrylic, with the integral blackout shade. Cut locations are already in the floor plan. Tint, a ceramic coat, and PDLC stay aspirational | [windows-ventilation](../03-features/windows-ventilation/README.md) |
+| Roof solar | Continuous canopy on a perimeter rack over the ~160" roof, with high-bar risers over the Webasto. **Dual MPPT:** main series string on the clear runway, plus a narrow N-type string in the side gaps. Hood solar too, if possible | [electrical-system](../03-features/electrical-system/README.md), [exterior](../03-features/exterior/README.md) |
+| **50A** shore socket and a house **J1772** | These charge the **house** batteries. 30A pedestals use an adapter. Traction charging stays on the factory front port | [electrical-system](../03-features/electrical-system/README.md) |
+| Heat pump | **Webasto Cool Top Trail 48V.** First addition after the fair-weather trip. Blank a **14" × 14"** roof cutout now. Desert evening cooling is a trailer-and-solar trip | [heating-cooling](../03-features/heating-cooling/README.md) |
+| Roof fan | **MaxxAir MaxxFan Mini Plus** (00-03801 class). Fixed **4.1"** rain shroud; second **14" × 14"** roof cutout. Crossbars clear of the rear exhaust louvers | [windows-ventilation](../03-features/windows-ventilation/README.md), [exterior](../03-features/exterior/README.md) |
+| Plumbed pod coffee maker | Keurig K-Slim / K-Mini or Nespresso. Thin PEX after the filters | [galley](../03-features/galley/README.md) |
+| Starlink, Weboost, mesh Wi-Fi | Starlink stays on while anyone is in the van (**75 W**) | [connectivity](../03-features/connectivity/README.md) |
+| Smoke and CO detectors | Extinguisher is already on the first trip | [safety-security](../03-features/safety-security/README.md) |
+| Cab partition | Closes the cab so factory HVAC and the heat pump each keep their own volume | [heating-cooling](../03-features/heating-cooling/README.md) |
+| Shower | Driver’s-side rear, navy showers. Same handheld can rinse outside | [bathroom](../03-features/bathroom/README.md) |
+| Bathroom fan | With the shower | [bathroom](../03-features/bathroom/README.md) |
+| Instant water heaters, warm tank, solar-thermal socket | **240V** heaters at sink and shower. Trailer carries the parabolic collector | [plumbing](../03-features/plumbing/README.md) |
+| Controls tablet and leak sensors | The first trip already dumps and reads levels. This is the nicer screen, plus leak detectors | [connectivity](../03-features/connectivity/README.md) |
+| 4-point leveling jacks | About **500 W**, short duty. Brand and spec wait | [exterior](../03-features/exterior/README.md) |
+| Hotel-style safe | Permanently mounted, big enough for the two laptops. Brand waits | [safety-security](../03-features/safety-security/README.md) |
+| Combo oven and microwave | **1,500 W** circuit. Brand later | [galley](../03-features/galley/README.md) |
+| Side GFCI | Outdoor cooking and tools | [galley](../03-features/galley/README.md) |
+| Trailer | Long trips. Deployable solar, about **15 gal** extra fresh water, grey-to-fresh reverse osmosis, solar-thermal collector, camp kit. Van-wall inlet for surplus DC and the heater hoses. Seawater RO is aspirational | [storage](../03-features/storage/README.md) |
+| Mirror | Its own project. **Polycarbonate** sheet, bonded full-face to a thin aluminum backer, screwed to the **galley cabinet beside the sink**. Covers a 5'2" and a 6'2" face. See [interior finish](../03-features/interior-finish/README.md) | [interior-finish](../03-features/interior-finish/README.md) |
 
-| Item | Notes |
-|------|-------|
-| 12/48V heat pump | Cabin heat/cool on house bus. **Not installed for the first trip** (fair weather; factory cab HVAC only). Still pick the unit, reserve its roof opening, and **size the house battery as if it is installed** |
-| Low-profile roof fan | Under roof rack for ventilation |
-| Bathroom exhaust fan | Clear odor; vent shower moisture |
-| Bug screens (side slider + rear doors) | Leave doors open without bugs |
-| Outdoor “patio” lights | Outside sliding door |
-| Forward-facing flood lights | Night driving |
+Bins come along with the galley. The Tern blackout shade comes with the window.
 
-### Electrical, solar & charging
+## Aspirational
 
-| Item | Notes |
-|------|-------|
-| Roof rack + solar PV | **As much roof PV as the heat-pump opening leaves.** Goal: replace a moderate-use day. **Hood solar too**, if it survives hood heat and the wipers. Shore power covers the rest |
-| Deployable ground solar | External plug + dedicated MPPT |
-| External J1772 | One exterior **J1772** into the **house** battery (home EVSE or a campsite). Traction keeps the factory front port |
-| 240V Level 2 charger | **50A shore socket** on the van (120/240V). A 30A pedestal plugs in through an adapter. Traction J1772 port stays at the front of the Mercedes |
-| GFCI socket on van side | Exterior convenience outlet |
-| Air pump | Van tires, e-bike tires, inflatable toys |
-| Raspberry Pi central brain | Control hub; run OpenVan |
-| iPad | OpenVan app display / control |
-
-### Water
-
-| Item | Notes |
-|------|-------|
-| Hot/warm water tank | Stored warm water |
-| Instant electric water heaters | Point-of-use / boost |
-| Deployable solar thermal collector | Lives on the **trailer**: deployable frame, flexible mirror formed into a parabola, black pipe at the focal line. Hoses to the van’s warm-tank socket |
-| Side quick-connect for solar thermal | External port on van side; routed to warm/hot water heater |
-| Shower area | Wet-bath capability. End-state habit is a **navy shower** in the van plus real showers at campgrounds. First trip has toilet + cold sink only |
-| Electric ball valves | Grey + black dump |
-| Tank sensors | Fresh, grey, black |
-| Water leak detectors | |
-| Reverse osmosis (grey → fresh) | On the **trailer**. Priority: **grey → fresh** (recovers water and frees grey-tank room), then river/lake. Seawater is optional and can be cut. The van’s own grey tank still holds a trailer-less 3 days |
-
-### Galley & living
+May never be installed. Nothing else in the design waits on these.
 
 | Item | Notes |
 |------|-------|
-| Microwave | |
-| Toaster oven / air-fryer | |
-| Minibar | |
-| Garbage + recycling pails | |
-| Mirror | Dressing, shaving, make-up |
-| External monitor | For laptops |
-| Cabin / cab screen or door | Close the cab while driving and at night so factory HVAC and the heat pump each serve their own volume. Also blocks sightlines |
-| Blackout window coverings | Insulation + sleep darkening |
-
-### Exterior & chassis
-
-| Item | Notes |
-|------|-------|
-| Spare tire rack | Back door |
-| Utility box | Back door |
-| Electric-extending awning | Side of van |
-| Trailer hitch | Promoted to MVP — see must-haves. Bike rack candidate: **QuikrStuff Mach 2** |
-| Electric fold-out step | Under sliding door |
-| Winch + front bumper | **Shop install.** In the build, not a first-trip must. See [constraints](../00-overview/constraints.md) |
-| Shocks upgrade | **Shop.** Spec still open |
-| Exterior paint | **Shop.** Color waits on the shared interior/exterior palette |
-| 4-point leveling jacks | |
-
-### Windows & glazing
-
-| Item | Notes |
-|------|-------|
-| Greenfilm USA G-Cling static tint | Preferred eco cling option — see [windows products](../03-features/windows-ventilation/products.md) |
-| Ceramic coating (in + out) | Less effective than dedicated film; e.g. Migliore Strata, Cerakote glass coat — OK on windshield |
-| Adhesive PDLC smart tint | Cabin acrylic only (not front); confirm acrylic compatibility |
-
-### Connectivity
-
-| Item | Notes |
-|------|-------|
-| Starlink | |
-| weBoost | Cellular booster |
-| Mesh Wi‑Fi | |
-| External weather station | Temp, pressure, wind, humidity |
-| RuuviTag Pro (interior) | Internal temp, humidity, pressure — BLE sensors |
-
-### Safety & security
-
-| Item | Notes |
-|------|-------|
-| Security cameras + motion detectors | |
-| Smoke / CO detectors | Not on the first trip. Extinguisher is the MVP safety item |
-| Hotel-style safe | Permanently attached; laptops etc. |
-| Magnetic cabinet locks | Stay locked while driving |
+| Winch and the front bumper that would carry it | **12V**, in the **15,000–18,000 lb** class if it is ever bought. Not on the first trip, and not part of finishing the van. Decide later, including whether it is needed at all |
+| Portable EVSE into the van itself | **3 kW** max. **240V** from the house inverter into the Mercedes charge port under the front logo, and only when the house bank is full. Portable Level 2 (Lectron class). No under-hood tap. The **50A** socket and the house **J1772** stay on the completion list |
+| Electric fold-out step | Sliding door. Floor keep-out makes this hard |
+| Awning | |
+| Spare-tire rack and a back-door utility box | |
+| Patio lights and a forward flood-light bank | |
+| Bug screens for a fully open slider or rear door | The Tern sash has its own screen |
+| Window tint | **G-Cling**, a ceramic coat, and adhesive PDLC. Cabin acrylic only for the film. None of this is required to finish the van |
+| Security cameras and magnetic cabinet locks | |
+| Weather station and RuuviTag Pro sensors | |
+| Wine / beer fridge | iCompact / slim class |
+| Mini dishwasher, garbage disposal | |
+| TV / external monitor | |
+| Built-in air pump | A portable compressor covers tires, bikes, a kayak, and the plumbing blow-out (regulated to 30–40 PSI) without a van circuit |
+| Seawater reverse osmosis | Grey-to-fresh on the trailer is in the completion list. Seawater can be cut |
 
 ## Material preferences (eco)
 
@@ -139,7 +100,7 @@ Height note: ~1.5–1.8" of the ~5" standing-height budget (floor + ceiling + cl
 | Item | Preferred | Notes |
 |------|-----------|-------|
 | Window unit | **Arctic Tern Overland** classic double-pane acrylic | [ternoverland.com/classic-windows](https://ternoverland.com/classic-windows/) |
-| Tint (preferred) | **Greenfilm USA G-Cling 70** static cling | [product](https://greenfilmusa.com/products/g-cling-70-static-cling-window-tint) |
+| Tint (aspirational) | **Greenfilm USA G-Cling 70** static cling, if tint is ever added | [product](https://greenfilmusa.com/products/g-cling-70-static-cling-window-tint) |
 | Tint (alt) | Ceramic coat in/out | Migliore Strata or Cerakote glass protectant |
 | Smart film | Self-adhesive PDLC (research) | [Intelligent Glass](https://intelligentglass.net/products/self-adhesive-switchable-smart-film/) — verify on acrylic |
 

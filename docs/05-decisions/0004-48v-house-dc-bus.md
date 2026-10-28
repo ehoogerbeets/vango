@@ -15,8 +15,8 @@ The house electrical system uses a **48V DC** bus for major DC appliances, inclu
 
 | Appliance | Voltage |
 |-----------|---------|
-| Heat pump | **48V DC** |
-| Fridge / freezer | **48V DC** *(under review — 12V candidates via DC-DC; see [daily energy budget](../02-architecture/daily-energy-budget.md))* |
+| Heat pump | **48V DC** — **Webasto Cool Top Trail 48V**, chosen 2026-10-28 |
+| Fridge / freezer | **12V DC** via a 48V→12V DC-DC. **Furrion Arctic 10.7** dual-swing, chosen 2026-10-27. The original 48V fridge line is withdrawn |
 
 House battery chemistry remains LiFePO₄ (or solid-state later) per ADR-0003; pack topology should align with the **48V** bus (exact series string / BMS TBD).
 
@@ -24,7 +24,7 @@ Inverter/charger AC domains: **120V** for induction, oven/air-fryer, microwave, 
 
 ## Why
 
-- Heat pump and fridge/freezer chosen as 48V DC models — bus must match
+- Heat pump is a 48V DC model — the bus must match. The fridge was later chosen as 12V (amendment 2026-10-27) and rides a DC-DC off that bus
 - 48V reduces current (and thus cable gauge / losses) vs 12V for the same power
 - Keeps continuous loads (fridge, climate) off the inverter when possible → better off-grid efficiency
 
@@ -52,7 +52,7 @@ Inverter/charger AC domains: **120V** for induction, oven/air-fryer, microwave, 
 
 ### Positive
 
-- Clear voltage domains: **48V DC** (climate, refrigeration) vs **120V AC** (cooking, plugs) vs **240V AC** (instant HW)
+- Clear voltage domains: **48V DC** (climate) vs **12V DC** (fridge, lights, and likely the small loads) vs **120V AC** (cooking, plugs) vs **240V AC** (instant HW)
 - Better efficiency story for multi-day off-grid
 
 ### Negative / trade-offs
@@ -63,9 +63,10 @@ Inverter/charger AC domains: **120V** for induction, oven/air-fryer, microwave, 
 
 ### Follow-ups
 
-- [ ] House battery pack voltage / BMS / kWh sizing
+- [ ] House battery kWh is not locked. 12–15 kWh is a payload ceiling only. See [daily energy budget](../02-architecture/daily-energy-budget.md)
 - [x] Lights are **12V puck and ambient** (2026-10-26). Pumps and valves are still open
-- [ ] Pick heat pump and fridge/freezer products → feature `products.md` + BOM
+- [x] Fridge is the **Furrion Arctic 10.7**, 12V, via DC-DC (2026-10-27)
+- [x] Heat pump is the **Webasto Cool Top Trail 48V** (2026-10-28). The unnamed 120V / 1,590 W contender is rejected. Evening Wh still needs real duty hours
 - [ ] Update load spreadsheet: DC vs AC columns
 
 ## Links

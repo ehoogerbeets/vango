@@ -34,6 +34,7 @@ flowchart LR
 | Storage | Redesign — **not** classic rear garage | P0 | Side bins, under-bed forward, wall, etc. |
 | Lounge / dinette | **Under raised bed** (settee) | P0 | Settee backs = night sleep supports |
 | Electrical / technical | TBD | | Respect floor keep-out for penetrations |
+| Water service bay | **Aft wet core** | P0 | **GoBluTech AR3** canisters need wrench clearance. No rear garage — mount near the passenger fresh tank / galley base or another reachable aft panel |
 | Entry / mud | Sliding door | | Step mounting highly constrained |
 
 ## Floor plan direction (accepted)

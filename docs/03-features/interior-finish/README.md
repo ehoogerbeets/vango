@@ -3,7 +3,7 @@
 > Status: `researching`  
 > Priority: `P1`  
 > Jira Epic: _TBD (build phase)_  
-> Last updated: 2026-10-25
+> Last updated: 2026-10-27
 
 ## Summary
 
@@ -16,10 +16,19 @@ Calm modern cabin. Cabinet and drawer panels are **carbon skins over an end-grai
 - Match the calm, contemporary interior in [vision](../../00-overview/vision.md)
 - The van ceiling is a thin painted or fabric panel, not this maple face. Walls are painted carbon or aluminum plate — [walls and ceiling](../walls-ceiling/README.md)
 - Interior colors and the shop’s exterior paint are **one open palette**. A designer friend sets it. Do not pick colors in this doc first
+- The **mirror** is its own project, on the completion list ([requirements](../../01-van/requirements.md))
 
 ## Non-goals
 
 -
+
+## Mirror
+
+One mirror, on the **passenger galley**, on the cabinet face beside the sink. The cooktop window is not a mirror wall. The shower stall is the wrong home: it is wet, storage swings through it, and the stall itself is later than the sink.
+
+Both people stand fully upright (6'2" and 5'2"). A single sheet about **24 inches** tall, centered near **58 inches** above the finished floor, shows both faces. Narrow uppers may push it onto the cabinet’s inboard or end panel instead of the wall under the uppers. There is no second mirror.
+
+The sheet is **optical polycarbonate**, not glass and not a stick-on film. Glass breaks and weighs more. A loose acrylic sheet cracks from an edge hit. Film gives a wavy image. Bond the polycarbonate **full-face** to a thin aluminum backer so the plastic cannot drum, then screw that backer to cabinet blocking with threadlocker or nylock nuts. A frame gets a thin foam gasket so nothing buzzes. Adhesive on the van skin, a hook, and a friction-arm magnifier all work loose on the road.
 
 ## Requirements
 
@@ -51,6 +60,7 @@ Frame members stay the carbon tubes already sized for the bed and cabinets (1×1
 |------|----------|-----|----------------------|--------|
 | 2026-10-25 | Cabinet panels: carbon skins, **end-grain balsa** core | Renewable core; stocked in 24×48" sheets; stiffer than solid plate | Nomex honeycomb (less eco; better moisture resistance) | decided |
 | 2026-10-25 | Visible face: **maple veneer** | Reads as wood cabinetry | Exposed carbon weave; walnut, oak, bamboo | decided |
+| 2026-10-27 | One **polycarbonate** mirror, bonded to aluminum, screwed to the galley cabinet beside the sink | Light, stays in one piece, and does not buzz loose. Serves 5'2" and 6'2" | Glass; stick-on film; a shower-stall mirror; a friction-arm magnifier | decided |
 
 Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05-decisions/README.md)
 
@@ -58,7 +68,7 @@ Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05
 
 | Item | Brand / model | Est. cost | Why | Status | Link |
 |------|---------------|-----------|-----|--------|------|
-| | | | | researching | |
+| Mirror | | Optical polycarbonate on a thin aluminum backer | Light, impact-resistant, screwed to the galley cabinet | preferred | |
 
 Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](../../06-shopping/bom.md)
 

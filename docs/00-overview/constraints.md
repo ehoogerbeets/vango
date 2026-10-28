@@ -64,10 +64,10 @@ Hard limits that every feature and purchase decision must respect. Soft / aspira
 
 Edwin builds the conversion: interior, electrical, plumbing, windows, and cabinetry. A shop does only:
 
-- Suspension **shocks** upgrade
-- Trailer **hitch** (already an MVP item)
-- **Front bumper with a winch**
-- **Exterior paint**
+- Trailer **hitch** (MVP)
+- Suspension **shocks** (MVP; shop, before the rest of the build; spec still open)
+- **Exterior paint** (MVP; shop, before the rest of the build, after the color consult)
+- A **front bumper and winch** only if that aspirational item is ever built ([requirements](../01-van/requirements.md))
 
 Interior and exterior colors are one scheme, still open. A designer friend sets the palette before paint is ordered.
 

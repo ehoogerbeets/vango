@@ -7,7 +7,7 @@
 
 ## Summary
 
-First trip carries a **fire extinguisher** and nothing else from this list. Smoke and CO detectors, cameras, a safe, and magnetic cabinet locks stay off the van until a later trip.
+First trip carries a **fire extinguisher**. Smoke and CO detectors, and a hotel-style safe, are part of finishing the van. Cameras and magnetic cabinet locks may never be installed.
 
 ## Goals
 
@@ -34,19 +34,20 @@ First trip carries a **fire extinguisher** and nothing else from this list. Smok
 
 - Smoke detector
 - CO detector
-- Hotel-style safe, permanently attached
-- Security cameras and motion detectors
-- Magnetic cabinet locks for driving
+- Hotel-style safe, permanently attached, when the van is finished
+- Security cameras and motion detectors (aspirational)
+- Magnetic cabinet locks for driving (aspirational)
 
 ## Design notes
 
-The extinguisher is the only safety item in the [MVP list](../../01-van/requirements.md). The could-list matches the old nice-to-haves and is not scheduled.
+The extinguisher is the only safety item on the first trip. Smoke, CO, and the safe complete the van after that. Cameras and magnetic locks are aspirational ([requirements](../../01-van/requirements.md)).
 
 ## Decisions
 
 | Date | Decision | Why | Alternatives rejected | Status |
 |------|----------|-----|----------------------|--------|
 | 2026-10-25 | First trip: **fire extinguisher only** | The one safety item chosen for the shakedown | Smoke, CO, cameras, safe, and cabinet locks on trip one | decided |
+| 2026-10-27 | **Safe** completes the van. Cameras and magnetic locks stay aspirational | The safe is wanted. The cameras and locks may never be fitted | Safe on the first trip; safe dropped entirely | decided |
 
 Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05-decisions/README.md)
 

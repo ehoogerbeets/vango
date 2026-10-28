@@ -34,14 +34,14 @@ Update totals when line items change.
 
 | Bucket | Est. lb | Confidence | Notes |
 |--------|---------|------------|-------|
-| A. Fixed build (known line items) | **~139** | low | Fridge candidate only so far — see below |
-| B. Fixed build (TBD systems) | **TBD** | — | Electrical, water hardware, floor, furniture, … |
-| C. Fluids (tanks **full**) | **TBD** | — | Fresh + grey + black + warm tank |
+| A. Fixed build (known line items) | **~139** | high | Furrion fridge only — see below |
+| B. House battery (ceiling only) | **~240–300** | low | **12–15 kWh** if that ceiling holds. Size is not locked; the load inventory is still open |
+| C. Fluids (tanks **full**) | **~584** | low | Fresh 292 + grey 217 + black 75. Shells and the warm tank still out |
 | D. People (typical) | **430** | high | 220 + 210 lb |
 | E. Trip cargo / food / gear | **TBD** | — | Reserve deliberately; don’t spend it on build |
-| **Sum (known)** | **~569** | | A + D only |
+| **Sum (A–D)** | **~1,400–1,450** | | No cabinets, floor, solar, inverter, tank shells, or cargo yet |
 | **Payload limit** | **2,624** | | |
-| **Remaining (before TBD build/fluids/cargo)** | **~2,055** | | Looks roomy until batteries, tanks, cabinets land |
+| **Remaining** | **~1,150–1,250** | | Only if the bank stays inside 12–15 kWh. A larger pack spends this remainder |
 
 **Working discipline:** treat remaining payload as already claimed by unknown systems. Prefer **light first**, then spend weight only where convenience or safety demands it.
 
@@ -55,8 +55,7 @@ Weights are **installed / shipping net** where known. Prefer datasheet net weigh
 
 | Item | Status | Est. lb | Conf. | Source / notes |
 |------|--------|---------|-------|----------------|
-| Fridge / freezer (planning pick) | candidate | **139** | high | **Furrion Arctic 10.7** dual-swing — [daily energy](daily-energy-budget.md) |
-| Fridge alt | candidate | **~119** | med | **GE Profile 9.8** class — saves ~20 lb if chosen |
+| Fridge / freezer | preferred | **139** | high | **Furrion Arctic 10.7** dual-swing, chosen 2026-10-27 — [daily energy](daily-energy-budget.md) |
 | Induction cooktop (2-burner) | researching | TBD | | |
 | Oven / air-fryer | researching | TBD | | Post-MVP leaning |
 | Microwave | researching | TBD | | Post-MVP leaning |
@@ -66,9 +65,11 @@ Weights are **installed / shipping net** where known. Prefer datasheet net weigh
 
 | Item | Status | Est. lb | Conf. | Source / notes |
 |------|--------|---------|-------|----------------|
-| House battery (48V LiFePO₄) | researching | TBD | | Dominates electrical weight — size from [daily energy](daily-energy-budget.md) |
+| House battery (48V LiFePO₄) | researching | **~240–300** if the ceiling holds | low | 12–15 kWh is a payload ceiling, not a locked size. See [daily energy](daily-energy-budget.md) |
 | Inverter / charger | researching | TBD | | 120/240V capable |
-| Solar PV + rack | post-MVP | TBD | | Roof + structure |
+| Solar PV + rack + fairing | post-MVP | TBD | | Dual-MPPT canopy on Orion or Vann Camp perimeter rack with high-bar risers |
+| Webasto Cool Top Trail 48V | preferred | TBD | | Roof heat pump. Footprint 44.1×33.5×8.8" |
+| MaxxAir MaxxFan Mini Plus | preferred | TBD | | Fixed 4.1" shroud under the canopy |
 | DC-DC, busbars, wire, panels | researching | TBD | | 12V fridge feed included |
 | Lights / outlets | researching | TBD | | Usually small |
 
@@ -78,10 +79,11 @@ Weights are **installed / shipping net** where known. Prefer datasheet net weigh
 |------|--------|---------|-------|----------------|
 | Fresh tank (empty) | researching | TBD | | |
 | Fresh water (**full**) | researching | **~292** | low | **35 gal × 8.34 lb/gal**. Tank shell still TBD |
-| Grey tank empty + **full** | researching | TBD | | Count full for worst case |
-| Black tank empty + **full** | researching | TBD | | |
+| Grey water (**full**) | preferred | **~217** | low | **26 gal × 8.34**. Tank shell still TBD |
+| Black water (**full**) | preferred | **~75** | low | **9 gal × 8.34**. Tank shell still TBD |
 | Warm / hot tank + fluid | post-MVP | TBD | | Water or glycol |
-| Pump, filters, UV, PEX, valves | researching | TBD | | |
+| GoBluTech AR3 UVC | preferred | **~12** | high | Dry weight ~11.7 lb. Fill-side mount |
+| Pump, PEX, valves, draft pump | researching | TBD | | |
 | Instant EW (×2) | post-MVP | TBD | | |
 | Solar thermal collector | post-MVP | TBD | | Deployable — may live outside payload when stowed on ground |
 
@@ -129,7 +131,7 @@ Weights are **installed / shipping net** where known. Prefer datasheet net weigh
 
 Ordered tactics when the roll-up gets tight:
 
-1. **Omit or defer** — post-MVP list exists so we can ship without awning, hitch, microwave, leveling jacks, etc.
+1. **Omit or defer** — the aspirational list (awning, winch, and the rest) is not required to call the van finished. Hitch is already MVP. Leveling jacks are part of finishing the van.
 2. **Smaller / lighter SKU** — e.g. GE fridge (~119 lb) vs Furrion (139 lb); thinner poplar; fewer cabinets.
 3. **Count fluids honestly** — size tanks for need, not fantasy; optional travel with partial fresh if grey/black must be empty for weigh-in.
 4. **Structure light** — honeycomb, poplar, aluminum where it still feels solid; no “boat teak everywhere.”

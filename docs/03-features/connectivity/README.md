@@ -7,7 +7,7 @@
 
 ## Summary
 
-Van telemetry and control — at minimum, an **app** to read **fresh / grey / black tank levels** and to **open/close electric ball valves** on the grey and black dump paths ([water](../../02-architecture/water.md)). Post-MVP: outdoor weather station + interior **RuuviTag Pro** sensors into OpenVan.
+Van telemetry and control. The first trip dumps grey and black through **electric valves** and reads **fresh, grey, and black** levels ([water](../../02-architecture/water.md)). A dedicated controls tablet and leak sensors complete the van after that, with Starlink, Weboost, and mesh Wi-Fi. A weather station and RuuviTag Pro sensors are aspirational ([requirements](../../01-van/requirements.md)).
 
 ## Goals
 
@@ -39,9 +39,9 @@ Van telemetry and control — at minimum, an **app** to read **fresh / grey / bl
 
 - Alerts (tank high/low)
 - Broader house electrical / climate telemetry
-- **External weather station** — temperature, pressure, wind, humidity
-- **RuuviTag Pro** sensors inside — temperature, humidity, pressure (BLE → OpenVan / Pi brain)
-- Starlink, weBoost, mesh Wi‑Fi ([requirements](../../01-van/requirements.md))
+- **External weather station** — temperature, pressure, wind, humidity. Aspirational
+- **RuuviTag Pro** sensors inside — temperature, humidity, pressure. Aspirational
+- Starlink, Weboost, and mesh Wi-Fi complete the van; they are not optional extras ([requirements](../../01-van/requirements.md))
 
 ## Design notes
 

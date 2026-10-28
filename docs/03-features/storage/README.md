@@ -51,7 +51,7 @@ The trailer has its own electrical system. It can feed **excess charge into the 
 | A few kWh of batteries | Trailer loads and a surplus to send to the van |
 | Deployable solar | Trailer array, not the van roof |
 | MPPT, small inverter/charger, charging hardware | Trailer house system |
-| DC-DC feed + van-wall socket | Surplus energy into the van’s 48V bank |
+| DC-DC feed + van-wall socket | Surplus energy into the van’s 48V bank. High-desert evening cooling depends on this array; the van’s 12–15 kWh bank does not store three desert days |
 | Toolbox | Repairs on long trips |
 | Solo stove | Outdoor cooking |
 | Firewood, small axe, shovel, handheld electric chainsaw | Campfire kit |

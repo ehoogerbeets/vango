@@ -9,7 +9,8 @@ Preferred eco / thermal choices from [requirements](../../01-van/requirements.md
 | SKU / item | Brand | Model | Qty | Est. unit $ | Est. total $ | Why this one | Vendor | Status | URL |
 |------------|-------|-------|-----|-------------|--------------|--------------|--------|--------|-----|
 | Cabin windows | Arctic Tern / Tern Overland | Classic or Flat **dual-pane acrylic awning** | TBD | | | Acrylic, light, propped opening, **integral bug screen and blackout shade**. Ceramic coat only if Tern confirms it on the pane | Tern Overland | preferred | https://ternoverland.com/classic-windows/ |
-| Static cling tint | Greenfilm USA | **G-Cling 70** | TBD | | | Eco-minded cling tint; removable | Greenfilm USA | preferred | https://greenfilmusa.com/products/g-cling-70-static-cling-window-tint |
+| Roof fan | MaxxAir | **MaxxFan Mini Plus** (00-03801 class) | 1 | | | Fixed **4.1"** rain shroud; motorized louvers, no rising lid. **14" × 14"** cutout. Fits under the solar canopy with plenum over the dome | | preferred | |
+| Static cling tint | Greenfilm USA | **G-Cling 70** | TBD | | | Eco-minded cling tint; removable. Aspirational — not required to finish the van | Greenfilm USA | aspirational | https://greenfilmusa.com/products/g-cling-70-static-cling-window-tint |
 | Ceramic coating (alt) | Migliore / Cerakote | Strata Coating or Cerakote Ceramic Glass Coat | TBD | | | Can do outside + inside; less effective than film | | researching | |
 | Smart film (PDLC) | Intelligent Glass (candidate) | Self-adhesive switchable smart film | TBD | | | Privacy / solar; cabin only — **verify acrylic adhesion** | | researching | https://intelligentglass.net/products/self-adhesive-switchable-smart-film/ |
 | Bug screens | TBD | Side sliding door + rear doors | 1 set | | | Leave doors open without bugs | | researching | |
@@ -18,10 +19,11 @@ Preferred eco / thermal choices from [requirements](../../01-van/requirements.md
 
 | Item | Contender | Why rejected | Date |
 |------|-----------|--------------|------|
-| | | | |
+| Roof fan | Rising-lid MaxxFan Deluxe / similar | Lid would collide with the solar canopy bridged over the Webasto | 2026-10-28 |
 
 ## Notes
 
 - Windshield / cab glass: ceramic coating path is more realistic than cling/PDLC on OEM glass (PDLC = cabin acrylic only).
 - Confirm G-Cling and PDLC compatibility with Arctic Tern acrylic (adhesion, warranty, optical distortion).
-- Bug screens are post-MVP in [requirements](../../01-van/requirements.md) until promoted. The Tern sash already has its own screen. A separate screen is still the one for a **fully open** sliding door or rear door.
+- Bug screens are aspirational in [requirements](../../01-van/requirements.md). The Tern sash already has its own screen. A separate screen is still the one for a **fully open** sliding door or rear door.
+- MaxxFan cutout and crossbar clearance share the roof plan with the Webasto and the dual-MPPT canopy ([climate](../../02-architecture/climate.md), [exterior](../exterior/README.md)).
