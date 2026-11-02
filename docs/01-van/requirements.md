@@ -38,10 +38,10 @@ Installed after the first trip. Product picks wait. The van is complete when the
 | Item | Notes | Feature |
 |------|-------|---------|
 | Windows | Separate project. Arctic Tern Overland classic double-pane acrylic, with the integral blackout shade. Cut locations are already in the floor plan. Tint, a ceramic coat, and PDLC stay aspirational | [windows-ventilation](../03-features/windows-ventilation/README.md) |
-| Roof solar | Continuous canopy on a perimeter rack over the ~160" roof, with high-bar risers over the Webasto. **Dual MPPT:** main series string on the clear runway, plus a narrow N-type string in the side gaps. Hood solar too, if possible | [electrical-system](../03-features/electrical-system/README.md), [exterior](../03-features/exterior/README.md) |
+| Roof solar | Panels on a perimeter rack, tops **flush with the rack and fairing**. The Webasto stands above that plane. **Dual MPPT:** main series string on the clear runway, plus a narrow N-type string in the side gaps. Hood solar too, if possible | [electrical-system](../03-features/electrical-system/README.md), [exterior](../03-features/exterior/README.md) |
 | **50A** shore socket and a house **J1772** | These charge the **house** batteries. 30A pedestals use an adapter. Traction charging stays on the factory front port | [electrical-system](../03-features/electrical-system/README.md) |
 | Heat pump | **Webasto Cool Top Trail 48V.** First addition after the fair-weather trip. Blank a **14" × 14"** roof cutout now. Desert evening cooling is a trailer-and-solar trip | [heating-cooling](../03-features/heating-cooling/README.md) |
-| Roof fan | **MaxxAir MaxxFan Mini Plus** (00-03801 class). Fixed **4.1"** rain shroud; second **14" × 14"** roof cutout. Crossbars clear of the rear exhaust louvers | [windows-ventilation](../03-features/windows-ventilation/README.md), [exterior](../03-features/exterior/README.md) |
+| Roof fan | **MaxxAir MaxxFan Mini Plus** (00-03801 class). Fixed **4.1"** rain shroud under the flush panels; second **14" × 14"** roof cutout. Crossbars clear of the rear exhaust louvers | [windows-ventilation](../03-features/windows-ventilation/README.md), [exterior](../03-features/exterior/README.md) |
 | Plumbed pod coffee maker | Keurig K-Slim / K-Mini or Nespresso. Thin PEX after the filters | [galley](../03-features/galley/README.md) |
 | Starlink, Weboost, mesh Wi-Fi | Starlink stays on while anyone is in the van (**75 W**) | [connectivity](../03-features/connectivity/README.md) |
 | Smoke and CO detectors | Extinguisher is already on the first trip | [safety-security](../03-features/safety-security/README.md) |
@@ -89,11 +89,14 @@ Preferred stack / products — not locked until install. Detail in feature `prod
 
 | Layer | Role | Preferred material |
 |-------|------|--------------------|
-| 1 | Insulation | **1" PlantPanel X** (Hempitecture), glued to van floor |
-| 2 | Stability / light / sustainable | **½" or ¼" poplar plywood**, glued to insulation |
+| 0 | Valley fill | **⅜" Manton Cork** strips in the OEM floor beads (**⅜" tall**), flush with the rib tops |
+| 1 | Insulation | **¾" PlantPanel I** (Hempitecture), sealed, glued over cork + rib tops |
+| — | Sealer | **Smart BioHemp Wood Protectant** on the hemp. The board is susceptible if it gets wet |
+| — | Adhesive | **AFM Safecoat Almighty Adhesive** (zero VOC) for cork, hemp, and aluminum joints |
+| 2 | Subfloor / stability | **⅛" aluminum sheet**, floated on adhesive. A wood subfloor is too heavy |
 | 3 | Finish / protection | **~7 mm** waterproof click-lock engineered bamboo (e.g. AquaGuard Carbonized Stranded) |
 
-Height note: ~1.5–1.8" of the ~5" standing-height budget (floor + ceiling + clearance).
+Height note: ~1.15" above the rib tops (¾" hemp + ⅛" aluminum + ~7 mm bamboo). Cork fills the valleys only. Floor images (no bead dimensions): Featherbuilt Sprinter 170 Planning Kit at `~/Documents/Van Go Project/Featherbuilt Sprinter 170 Planning Kit.pdf` (paid / copyrighted; not in git). See [references](references/README.md).
 
 ### Cabin windows
 

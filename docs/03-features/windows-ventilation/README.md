@@ -45,7 +45,7 @@ Cabin glazing is its own project. It completes the van, and it sits at the top o
 - Cling tint, a ceramic coat, and PDLC are aspirational. Confirm any of them with Tern before they touch the acrylic. Their notes treat the pane as not a film-tint product.
 - Cuts from the floor plan ([layout](../../02-architecture/layout.md)): driver’s wall **behind the long settee**; one **in the sliding door**; passenger wall **behind the induction cooktop** (also the cook vent); **passenger rear door**. Optional extra on the driver’s wall **forward of the toilet**, cabinets around it. The driver’s rear door is not called out. The sash screen does not cover a fully open sliding door.
 - City nights need **blackout and quiet**, and the van may still look like a camper. The Tern integral blackout shade is the cabin darkening. No stealth exterior.
-- **MaxxFan Mini Plus:** fixed, stationary exterior rain shroud at **4.1"** (open or closed). Motorized louvers handle exhaust without the dome rising. Align rack crossbars so the rear horizontal exhaust louvers stay wide open. Lives under the solar canopy with about **5.4–5.9"** of plenum above the dome ([climate](../../02-architecture/climate.md), [exterior](../exterior/README.md)).
+- **MaxxFan Mini Plus:** fixed, stationary exterior rain shroud at **4.1"** (open or closed). Motorized louvers handle exhaust without the dome rising. Align rack crossbars so the rear horizontal exhaust louvers stay wide open. The dome sits under the solar panels. With panel tops flush at the Orion’s **5.4"** rail, a **30 mm** frame leaves the underside near **4.2"**, which clears the dome ([climate](../../02-architecture/climate.md), [exterior](../exterior/README.md)).
 
 ## Decisions
 
@@ -53,7 +53,8 @@ Cabin glazing is its own project. It completes the van, and it sits at the top o
 |------|----------|-----|----------------------|--------|
 | 2026-10-14 | Prefer Arctic Tern Overland double-pane acrylic | Light + insulated acrylic for cabin | Glass RV windows (heavier) | proposed |
 | 2026-10-27 | Windows are their own project and **complete the van**, high on that list | Daylight is wanted, and the cuts should not be tangled with the first-trip galley | Windows on the first trip; windows folded into the galley build | decided |
-| 2026-10-28 | Roof fan is the **MaxxAir MaxxFan Mini Plus**, and it completes the van | Fixed **4.1"** shroud fits under the solar canopy; no rising lid into the panels | Leaving the roof fan aspirational; a rising-lid MaxxFan Deluxe under the canopy | decided |
+| 2026-10-28 | Roof fan is the **MaxxAir MaxxFan Mini Plus**, and it completes the van | Fixed **4.1"** shroud fits under the solar panels; no rising lid into the panels | Leaving the roof fan aspirational; a rising-lid MaxxFan Deluxe under the panels | decided |
+| 2026-10-30 | The fan lives **under the flush panel plane** | Panel tops meet the rack and fairing. A **30 mm** frame under a **5.4"** top leaves the underside near **4.2"**, above the **4.1"** dome | Raising the panels to buy a tall plenum over the fan | decided |
 
 Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05-decisions/README.md)
 
@@ -62,7 +63,7 @@ Detail write-ups: [decisions.md](decisions.md) · cross-cutting: [ADRs](../../05
 | Item | Brand / model | Est. cost | Why | Status | Link |
 |------|---------------|-----------|-----|--------|------|
 | Cabin windows | Arctic Tern Overland classic double-pane acrylic | | Light, insulated | preferred | [products](products.md) |
-| Roof fan | MaxxAir MaxxFan Mini Plus (00-03801) | | Fixed 4.1" shroud under the canopy | preferred | [products](products.md) |
+| Roof fan | MaxxAir MaxxFan Mini Plus (00-03801) | | Fixed 4.1" shroud under the flush panels | preferred | [products](products.md) |
 | Cling tint | Greenfilm USA G-Cling 70 | | Eco cling, if tint is ever added | aspirational | [products](products.md) |
 | Ceramic coat | Migliore Strata / Cerakote | | In+out; windshield OK | researching | [products](products.md) |
 | Smart film | Intelligent Glass PDLC (candidate) | | Cabin acrylic only | researching | [products](products.md) |

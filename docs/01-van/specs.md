@@ -41,6 +41,5 @@ Track actual material thicknesses in floor / insulation / ceiling feature docs.
 
 ## Photos & diagrams
 
-<!-- Link or drop files under docs/01-van/assets/ later. -->
-
--
+- Featherbuilt Sprinter 170 Planning Kit — local only: `~/Documents/Van Go Project/Featherbuilt Sprinter 170 Planning Kit.pdf` (paid / copyrighted; not in git). Floor / layout images for the 170"; no OEM bead dimensions. See [references](references/README.md).
+- [Supplemental BEG for eSprinter (Edition 2023-8)](https://www.mbvans.com/content/dam/mb-vans/us/upfitter/08302023_eSprinter_907_BEG_Edition2023-8_en.pdf) — official mbvans.com copy (copyrighted; do not commit the PDF). Index: [Upfitter BEG page](https://www.mbvans.com/en/upfitter/tech-info/beg).
