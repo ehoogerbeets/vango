@@ -1,1 +1,6 @@
 handoff.md
+
+# Copyrighted vendor / OEM docs — keep offline; path-reference only
+docs/01-van/references/*.pdf
+*.BEG*.pdf
+*Featherbuilt*

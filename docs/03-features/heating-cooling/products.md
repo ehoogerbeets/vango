@@ -16,5 +16,5 @@ Purchase and brand decisions for this feature. Mirror important rows into the [m
 
 ## Notes
 
-- Post-MVP install. Blank the **14" × 14"** cutout until the unit goes in. Roof rack and solar canopy clear the **8.8"** shroud — see [exterior](../exterior/README.md) and [electrical](../../02-architecture/electrical.md).
+- Post-MVP install. Blank the **14" × 14"** cutout until the unit goes in. The **8.8"** shroud stands above the flush panel plane — see [exterior](../exterior/README.md) and [electrical](../../02-architecture/electrical.md).
 - Cab partition and aft close-off still size the conditioned volume. The heat pump does not condition the cab or the far-aft wet/galley zone at night.

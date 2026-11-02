@@ -48,7 +48,7 @@ Cabin heat and cooling under an **all-electric** rule ([ADR-0003](../../05-decis
 - **Webasto Cool Top Trail 48V:** cool **12,300 BTU** (3.6 kW), heat **11,600 BTU** (3.4 kW). Variable-speed inverter compressor, soft start. Nominal draw **0.80–1.40 kW**, peak surge **1.50 kW**. External shroud **44.1" L × 33.5" W × 8.8" H**, with a **4"** unobstructed perimeter for the intake grills. Drops into a standard **14" × 14"** center roof cutout. Product table: [products.md](products.md)
 - **First trip is fair weather.** The heat pump is not installed. The factory cab heater and air conditioner are the only climate system on that trip. Cargo comfort depends on mild weather and an open path from the cab; the cargo box is not on the factory HVAC loop.
 - High-desert evening cooling is planned for trips that bring the **trailer and its deployable solar**. The van pack is not sized to store three desert days ([daily energy](../../02-architecture/daily-energy-budget.md)).
-- Roof coexistence: the solar canopy bridges the Webasto shroud on high-bar risers, and a **MaxxAir MaxxFan Mini Plus** shares the roof with a lower stationary dome. Stacking and rack choices: [exterior](../exterior/README.md). Dual-MPPT array: [electrical](../../02-architecture/electrical.md).
+- Roof coexistence: panel tops stay flush with the rack and fairing. The **8.8"** Webasto stands above that plane, with a **4"** intake perimeter and no panels over it. The **MaxxFan Mini Plus** sits under the panel underside. Stacking and rack choices: [exterior](../exterior/README.md). Dual-MPPT array: [electrical](../../02-architecture/electrical.md).
 - A **closable cab partition** lets driving use factory HVAC on the cab only, and lets the night heat pump ignore the cab. A second close-off keeps the far-aft galley/bath out of the night zone. Privacy: the closed cab also blocks sightlines into the living area.
 
 ## Decisions
@@ -76,7 +76,7 @@ Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](
 | Depends on | Why |
 |------------|-----|
 | Electrical system | **48V** house bus |
-| Exterior / roof rack | Clearance over the 8.8" shroud; 4" intake perimeter |
+| Exterior / roof rack | Webasto stands above the flush panel plane; 4" intake perimeter stays clear |
 | Insulation | Keeps desert heat out and shoulder-season heat in |
 
 | Depended on by | Why |
@@ -85,7 +85,7 @@ Full list: [products.md](products.md) · master BOM: [../../06-shopping/bom.md](
 
 ## Risks & open questions
 
-- Exact roof station for the 14" cutout vs the MaxxFan cutout and the solar canopy risers
+- Exact roof station for the 14" cutout vs the MaxxFan cutout and the flush panel field
 - Evening Wh once real duty hours replace the ~3 kWh planning figure
 
 ## Stories (future Jira)

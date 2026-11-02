@@ -12,8 +12,8 @@
 - House storage: **separate 48V** LiFePO₄ bank (or solid-state later) — not the 113 kWh drive battery
 - **48V DC** house battery. The fridge is 12V via DC-DC. The heat pump is the **Webasto Cool Top Trail 48V** on that bus
 - Inverter/charger: **120V + 240V** AC output — cooking and most appliances on 120V; **instant HW** on 240V. A **3 kW** portable EVSE from that 240V output into the Mercedes port is aspirational ([requirements](../01-van/requirements.md))
-- Solar PV: a **continuous canopy** over the ~160" usable roof, bridged over the Webasto on high-bar risers. Target is a moderate-use day replaced by the roof. Shore power is the backup. **Hood solar is in scope** if it can live with hood heat and the wipers. Long-trip surplus also comes from **deployable solar on the trailer**
-- **Dual MPPT:** a main series string on the clear runway, and a second isolated string of narrow N-type panels in the side gaps beside the Webasto. Controllers must deliver a charge **Vmp of about 58–65 V** into the 48V bank. See [Solar canopy](#solar-canopy-dual-mppt)
+- Solar PV: **4× Rich Solar MEGA 200 PRO** (**800W**) on a perimeter rack **aft of the Webasto**, tops flush with the rack and fairing. The heat pump sits forward over the bed (near the B-pillar), offset to one side. Panels do not bridge the shroud. A few inches of rack overhang is allowed. Shore power is the backup. Long-trip surplus comes from **deployable solar on the trailer**. A hood + body soft string is **aspirational**
+- **Three MPPTs into the 48V bank** (soft string is aspirational): (1) roof array, (2) deployable / trailer camp array, (3) hood + side soft string if built. Charge **Vmp about 58–65 V**. See [Solar array](#solar-array)
 - Solar thermal: deployable parabolic collector on the **trailer** preheats the van warm-water tank (see [water](water.md))
 - Trailer inlet: dedicated van-wall socket → **DC-DC into the 48V house bank**. Trailer batteries and MPPT stay on the trailer
 - House battery kWh is **not locked**. **12–15 kWh** nameplate is a payload ceiling only, written before the full load inventory. High-desert evening cooling is still a **trailer + deployable solar** trip ([daily energy budget](daily-energy-budget.md))
@@ -33,10 +33,12 @@
 
 ```mermaid
 flowchart TD
-  zone1[Main canopy series string] --> mppt1[MPPT 1]
-  zone2[Side N-type series string] --> mppt2[MPPT 2]
+  roof[Roof 800W Rich 2S2P] --> mppt1[MPPT 1 roof]
+  deploy[Deployable / trailer camp array] --> mppt2[MPPT 2 deployable]
+  soft[Hood + body soft string] -.-> mppt3[MPPT 3 soft aspirational]
   mppt1 --> batt[House battery 48V LiFePO4]
   mppt2 --> batt
+  mppt3 -.-> batt
   shore[Shore NA 120/240] --> ic[Inverter / charger]
   ic --> batt
   traction[e-Sprinter 113 kWh traction]
@@ -60,18 +62,34 @@ flowchart TD
   evse --> traction
 ```
 
-\* Solid-state house cells OK if practical at build time.
+\* Solid-state house cells OK if practical at build time. Dotted soft string is aspirational.
 
-## Solar canopy (dual MPPT)
+## Solar array
 
-The 48V bank wants a charge **Vmp of about 58–65 V**. One mismatched string that shadows would throttle the whole array, so the canopy is two zones:
+The 48V bank wants a charge **Vmp of about 58–65 V**. Roof, deployable, and any soft string each get their own MPPT so shade and plug-in behavior do not fight.
 
-| Zone | Where | Panels | Wiring | Controller |
-|------|-------|--------|--------|------------|
-| **1 — main runway** | The clear **~115.9"** of length that is not under the Webasto | Large residential-grade 12V or 24V panels | One **series** string. Combined **Voc about 72–144 V** | **MPPT #1** (heavy lifter) |
-| **2 — side channels** | The ~9.5" lateral gaps on either side of the Webasto, on lower crossbars | **2×** narrow high-voltage N-type modules (Renogy ShadowFlux / BougeRV 24V–48V class). Each panel **Voc ≈ 45–50 V** | Series down one side channel → combined **Vmp ≈ 75 V**, **Voc ≈ 90–100 V** | **MPPT #2** (e.g. Victron SmartSolar 100/20) |
+### Roof — 4× Rich MEGA 200 PRO (800W)
 
-Zone 2 exists because the **8.8"** Webasto shroud casts moving shadows into those side gaps. Keeping that string on its own MPPT means partial shade on the sides never pulls down Zone 1’s amps. Rack clearance and the front fairing: [exterior](../03-features/exterior/README.md). Stacking heights: [climate](climate.md).
+| Item | Spec |
+|------|------|
+| Panel | **Rich Solar MEGA 200 PRO** (RS-M200P class): **200W**, **58.7" × 26.8" × 1.2"** (**30 mm** frame), Vmp **36.3V**, Voc **43.5V** |
+| Count / watts | **4× = 800W** |
+| Layout | **2×2 grid aft of the Webasto.** Long edge **fore-aft** (58.7"). Short edge **across the van** (26.8"). One pair side-by-side (**53.6"** wide, inside the Orion **53.875"**), then a second identical pair behind it (**117.4"** of length). A few inches of **rear overhang** make the length fit |
+| Wiring | **2S2P** into MPPT #1. Combined Vmp ≈ **73V**, Voc ≈ **87V** |
+| Heat pump | Forward over the bed, near the B-pillar. **Offset to one side** so the **4"** intake keep-outs stay inside the solid side rails. About **12"** of strip may remain on the open side; that strip is not part of the 800W array |
+| Plane | Panel tops flush with the rack and fairing. MaxxFan under the underside. Webasto above the plane |
+
+Not four panels in a single row across the van (that would need ~107" of width). Not long-edge-across for the locked layout; the 2×2 is the Sprinter-width pair Orion sizes these panels for.
+
+### Controllers
+
+| MPPT | Array | Victron class (direction) | Status |
+|------|-------|---------------------------|--------|
+| **#1 roof** | 800W Rich 2S2P | **SmartSolar 100/20** (up to **1160W** @48V) is enough; **150/35** if more headroom is wanted | planned |
+| **#2 deployable** | Trailer / campsite array (size TBD; with the roof this is the path toward ~3kW total) | **150/45** or **250/60** once watts are picked | planned |
+| **#3 soft** | Hood + body / AC-strip series string, Imp-matched | **100/20** | **aspirational** |
+
+Heights and rack: [climate](climate.md) · [exterior](../03-features/exterior/README.md).
 
 ## Known major loads (direction)
 
@@ -105,7 +123,7 @@ Zone 2 exists because the **8.8"** Webasto shroud casts moving shadows into thos
 | House kWh | open | **12–15 kWh** is a payload ceiling, not a locked size. Inventory is still being turned into Wh/day |
 | Fridge **Furrion 12V** via DC-DC | accepted | Dual-swing door. ADR-0004 amended 2026-10-27 |
 | Heat pump **Webasto Cool Top Trail 48V** | accepted | Native 48V. The 120V / 1,590 W contender is rejected. [heating-cooling](../03-features/heating-cooling/README.md) |
-| Dual-MPPT solar canopy (main series + side N-type) | accepted | Shadow beside the Webasto must not throttle the main string. [exterior](../03-features/exterior/README.md) |
+| Dual-MPPT solar canopy (main series + side N-type) | accepted | Shadow beside the Webasto must not throttle the main string. Panels stay flush with the rack and fairing. [exterior](../03-features/exterior/README.md) |
 | Surplus house → traction at **3 kW** | aspirational | 240V EVSE into the front charge port when the house bank is full. No under-hood tap. Traction does not backfeed the house. Not part of finishing the van |
 | Cabin lights **12V puck and ambient** | accepted | Supersedes the 2026-10-25 native-48V choice. Travel-hardened lights are 12V |
 | Inverter may run **sink heat + one burner** | accepted | Shower waits. Continuous rating is whichever is larger: the shower heater alone, or the sink heater plus one induction burner |
