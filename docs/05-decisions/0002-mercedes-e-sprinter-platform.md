@@ -112,6 +112,7 @@ Comparison snapshot used for the decision (planning figures — re-verify at pur
 ## Links
 
 - Related features: layout, windows-ventilation, electrical-system, insulation, floor-subfloor, walls-ceiling, plumbing
-- Related docs: [selection](../01-van/selection.md), [specs](../01-van/specs.md), [candidates](../01-van/candidates.md), [ADR-0003](0003-all-electric-house-systems.md), [ADR-0005](0005-traction-battery-floor-no-drill-zone.md)
+- Related docs: [selection](../01-van/selection.md), [specs](../01-van/specs.md), [candidates](../01-van/candidates.md), [van references](../01-van/references/README.md), [ADR-0003](0003-all-electric-house-systems.md), [ADR-0005](0005-traction-battery-floor-no-drill-zone.md)
+- OEM: [Supplemental BEG for eSprinter (Edition 2023-8)](https://www.mbvans.com/content/dam/mb-vans/us/upfitter/08302023_eSprinter_907_BEG_Edition2023-8_en.pdf) (mbvans.com; copyrighted — do not commit). Index: [Upfitter BEG page](https://www.mbvans.com/en/upfitter/tech-info/beg)
 - Supersedes: —
 - Superseded by: —

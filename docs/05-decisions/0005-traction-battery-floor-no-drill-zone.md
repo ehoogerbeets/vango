@@ -91,6 +91,7 @@ A swing-out / under-mount **entry step** at the sliding door is difficult becaus
 ## Links
 
 - Related docs: [constraints](../00-overview/constraints.md), [layout](../02-architecture/layout.md), [water](../02-architecture/water.md), [ADR-0002](0002-mercedes-e-sprinter-platform.md)
+- OEM: [Supplemental BEG for eSprinter (Edition 2023-8)](https://www.mbvans.com/content/dam/mb-vans/us/upfitter/08302023_eSprinter_907_BEG_Edition2023-8_en.pdf) (mbvans.com; copyrighted — do not commit). Index: [Upfitter BEG page](https://www.mbvans.com/en/upfitter/tech-info/beg). Local offline copy only: `~/Documents/Van Go Project/08302023_eSprinter_907_BEG_Edition2023-8_en.pdf`
 - Related features: floor-subfloor, bathroom, galley, bed-sleep, storage, exterior, plumbing
 - Supersedes: —
 - Superseded by: —

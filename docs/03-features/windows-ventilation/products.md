@@ -9,7 +9,7 @@ Preferred eco / thermal choices from [requirements](../../01-van/requirements.md
 | SKU / item | Brand | Model | Qty | Est. unit $ | Est. total $ | Why this one | Vendor | Status | URL |
 |------------|-------|-------|-----|-------------|--------------|--------------|--------|--------|-----|
 | Cabin windows | Arctic Tern / Tern Overland | Classic or Flat **dual-pane acrylic awning** | TBD | | | Acrylic, light, propped opening, **integral bug screen and blackout shade**. Ceramic coat only if Tern confirms it on the pane | Tern Overland | preferred | https://ternoverland.com/classic-windows/ |
-| Roof fan | MaxxAir | **MaxxFan Mini Plus** (00-03801 class) | 1 | | | Fixed **4.1"** rain shroud; motorized louvers, no rising lid. **14" × 14"** cutout. Fits under the solar canopy with plenum over the dome | | preferred | |
+| Roof fan | MaxxAir | **MaxxFan Mini Plus** (00-03801 class) | 1 | | | Fixed **4.1"** rain shroud; motorized louvers, no rising lid. **14" × 14"** cutout. Fits under panels whose tops are flush with the rack and fairing | | preferred | |
 | Static cling tint | Greenfilm USA | **G-Cling 70** | TBD | | | Eco-minded cling tint; removable. Aspirational — not required to finish the van | Greenfilm USA | aspirational | https://greenfilmusa.com/products/g-cling-70-static-cling-window-tint |
 | Ceramic coating (alt) | Migliore / Cerakote | Strata Coating or Cerakote Ceramic Glass Coat | TBD | | | Can do outside + inside; less effective than film | | researching | |
 | Smart film (PDLC) | Intelligent Glass (candidate) | Self-adhesive switchable smart film | TBD | | | Privacy / solar; cabin only — **verify acrylic adhesion** | | researching | https://intelligentglass.net/products/self-adhesive-switchable-smart-film/ |
@@ -19,7 +19,7 @@ Preferred eco / thermal choices from [requirements](../../01-van/requirements.md
 
 | Item | Contender | Why rejected | Date |
 |------|-----------|--------------|------|
-| Roof fan | Rising-lid MaxxFan Deluxe / similar | Lid would collide with the solar canopy bridged over the Webasto | 2026-10-28 |
+| Roof fan | Rising-lid MaxxFan Deluxe / similar | A rising lid would hit the panels in the flush plane | 2026-10-28 |
 
 ## Notes
 

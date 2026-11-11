@@ -67,9 +67,9 @@ Weights are **installed / shipping net** where known. Prefer datasheet net weigh
 |------|--------|---------|-------|----------------|
 | House battery (48V LiFePO₄) | researching | **~240–300** if the ceiling holds | low | 12–15 kWh is a payload ceiling, not a locked size. See [daily energy](daily-energy-budget.md) |
 | Inverter / charger | researching | TBD | | 120/240V capable |
-| Solar PV + rack + fairing | post-MVP | TBD | | Dual-MPPT canopy on Orion or Vann Camp perimeter rack with high-bar risers |
-| Webasto Cool Top Trail 48V | preferred | TBD | | Roof heat pump. Footprint 44.1×33.5×8.8" |
-| MaxxAir MaxxFan Mini Plus | preferred | TBD | | Fixed 4.1" shroud under the canopy |
+| Solar PV + rack + fairing | post-MVP | TBD | | Dual-MPPT array on Orion or Vann Camp. Panel tops flush with the rack and fairing |
+| Webasto Cool Top Trail 48V | preferred | TBD | | Roof heat pump. Footprint 44.1×33.5×8.8". Stands above the panel plane |
+| MaxxAir MaxxFan Mini Plus | preferred | TBD | | Fixed 4.1" shroud under the flush panels |
 | DC-DC, busbars, wire, panels | researching | TBD | | 12V fridge feed included |
 | Lights / outlets | researching | TBD | | Usually small |
 
@@ -91,8 +91,10 @@ Weights are **installed / shipping net** where known. Prefer datasheet net weigh
 
 | Item | Status | Est. lb | Conf. | Source / notes |
 |------|--------|---------|-------|----------------|
-| PlantPanel X 1" (floor) | preferred | TBD | | Area × sheet weight — [floor products](../03-features/floor-subfloor/products.md) |
-| Poplar plywood ¼–½" | preferred | TBD | | |
+| Manton Cork ⅜" (valley fill) | preferred | TBD | low | Only the valley area, not full floor area — [floor products](../03-features/floor-subfloor/products.md) |
+| PlantPanel I ¾" (floor cap) | preferred | TBD | | Area × sheet weight — [floor products](../03-features/floor-subfloor/products.md) |
+| Aluminum sheet ⅛" (subfloor) | preferred | ~1.8 lb/ft² × area | low | Floated for stability. ~1.76 lb/ft² for ⅛" aluminum |
+| Hemp sealer + zero-VOC adhesive | preferred | small | low | Smart BioHemp on the PlantPanel; AFM Safecoat Almighty Adhesive on cork / hemp / aluminum |
 | Engineered bamboo ~7 mm | preferred | TBD | | |
 | Wall / ceiling insulation | researching | TBD | | |
 | Wall / ceiling finish | researching | TBD | | |
@@ -132,7 +134,7 @@ Weights are **installed / shipping net** where known. Prefer datasheet net weigh
 Ordered tactics when the roll-up gets tight:
 
 1. **Omit or defer** — the aspirational list (awning, winch, and the rest) is not required to call the van finished. Hitch is already MVP. Leveling jacks are part of finishing the van.
-2. **Smaller / lighter SKU** — e.g. GE fridge (~119 lb) vs Furrion (139 lb); thinner poplar; fewer cabinets.
+2. **Smaller / lighter SKU** — e.g. GE fridge (~119 lb) vs Furrion (139 lb); fewer cabinets. The floor subfloor is already the ⅛" aluminum sheet.
 3. **Count fluids honestly** — size tanks for need, not fantasy; optional travel with partial fresh if grey/black must be empty for weigh-in.
 4. **Structure light** — honeycomb, poplar, aluminum where it still feels solid; no “boat teak everywhere.”
 5. **Roof weight last** — PV, rack, fan, weather station compete with payload *and* CG height.

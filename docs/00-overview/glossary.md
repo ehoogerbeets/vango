@@ -36,7 +36,7 @@ Shared terms so feature docs stay consistent.
 | Weather station | Exterior sensor suite (temp, pressure, wind, humidity) feeding OpenVan |
 | Solar thermal quick-connect | Side-of-van coupling for a deployable water/glycol collector → warm/hot tank loop |
 | Cool Top Trail | Webasto **48V** rooftop heat pump (cool 12.3k BTU / heat 11.6k BTU). Drops into a 14" × 14" cutout |
-| MaxxFan Mini Plus | MaxxAir roof fan with a fixed 4.1" rain shroud (no rising lid). Fits under the solar canopy |
+| MaxxFan Mini Plus | MaxxAir roof fan with a fixed 4.1" rain shroud (no rising lid). Fits under panels whose tops are flush with the rack and fairing |
 | Dual MPPT | Two solar charge controllers: main canopy series string, plus an isolated narrow N-type string beside the Webasto |
 
 <!-- Add project-specific terms as we invent them. -->

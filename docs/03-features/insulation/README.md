@@ -3,11 +3,11 @@
 > Status: `researching`  
 > Priority: `P1`  
 > Jira Epic: _TBD (build phase)_  
-> Last updated: 2026-10-25
+> Last updated: 2026-11-02
 
 ## Summary
 
-Plant-based insulation. The floor is already **1" PlantPanel X**. The ceiling uses the same hemp board, packed into the roof ribs so it does not spend the standing-height budget. Large wall cavities get hemp. Small voids that a board cannot fill get **wool**, stuffed in.
+Plant-based insulation. The floor uses a sealed **¾" PlantPanel I** flat cap over **⅜" cork** in the OEM floor valleys — [floor](../floor-subfloor/README.md). The ceiling uses hemp board packed into the roof ribs so it does not spend the standing-height budget. Large wall cavities get hemp. Small voids that a board cannot fill get **wool**, stuffed in.
 
 ## Goals
 
@@ -24,7 +24,7 @@ Plant-based insulation. The floor is already **1" PlantPanel X**. The ceiling us
 
 ### Must
 
-- Floor: **1" Hempitecture PlantPanel X**, glued down — [floor](../floor-subfloor/README.md)
+- Floor: **¾" Hempitecture PlantPanel I**, sealed and glued over cork-filled valleys — [floor](../floor-subfloor/README.md)
 - Ceiling: PlantPanel in the roof-rib bays. Planning assumption: those ribs are about **2–2.5" deep**, so the board fills existing depth. **Confirm rib depth on the van** before buying thickness
 - Walls: hemp board in the large cavities
 - Wool only where the opening is too small or too irregular for a board
@@ -42,7 +42,7 @@ Plant-based insulation. The floor is already **1" PlantPanel X**. The ceiling us
 
 The finish ceiling is a separate thin panel ([walls and ceiling](../walls-ceiling/README.md)). Insulation stops at the rib face. Only that finish panel comes out of the standing-height budget.
 
-Floor stack is already ~1.5–1.8" of the ~5" budget. Do not add ceiling insulation thickness on top of that.
+Floor stack above the rib tops is about **1.15"** of the ~5" budget (sealed ¾" hemp, ⅛" aluminum, ~7 mm bamboo). Cork fills the valleys only. Do not add ceiling insulation thickness on top of that.
 
 ## Decisions
 
